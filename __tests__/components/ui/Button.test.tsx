@@ -12,12 +12,14 @@ describe('Button', () => {
     expect(screen.getByRole('button')).toBeInTheDocument()
   })
 
-  it('applies outline variant', () => {
+  it('applies primary variant classes by default', () => {
+    render(<Button>Click</Button>)
+    expect(screen.getByRole('button')).toHaveClass('bg-nomada-green')
+  })
+
+  it('applies outline variant classes', () => {
     render(<Button variant="outline">Click</Button>)
-    const btn = screen.getByRole('button')
-    expect(btn).toBeInTheDocument()
-    // Verify outline classes are applied (border class)
-    expect(btn.className).toContain('border')
+    expect(screen.getByRole('button')).toHaveClass('border-nomada-green')
   })
 
   it('renders as a link when href is provided', () => {

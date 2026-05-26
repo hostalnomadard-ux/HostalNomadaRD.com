@@ -5,11 +5,22 @@ import { twMerge } from 'tailwind-merge'
 type ButtonVariant = 'primary' | 'outline' | 'ghost'
 type ButtonSize = 'sm' | 'md' | 'lg'
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+type ButtonAsButton = React.ButtonHTMLAttributes<HTMLButtonElement> & {
+  href?: undefined
   variant?: ButtonVariant
   size?: ButtonSize
-  href?: string
+  className?: string
 }
+
+type ButtonAsLink = {
+  href: string
+  variant?: ButtonVariant
+  size?: ButtonSize
+  className?: string
+  children?: React.ReactNode
+}
+
+type ButtonProps = ButtonAsButton | ButtonAsLink
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary: 'bg-nomada-green text-white hover:bg-nomada-green-dark',
@@ -47,7 +58,7 @@ export function Button({
   }
 
   return (
-    <button className={classes} {...props}>
+    <button className={classes} {...(props as React.ButtonHTMLAttributes<HTMLButtonElement>)}>
       {children}
     </button>
   )
