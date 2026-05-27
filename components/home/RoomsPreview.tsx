@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
-import { SectionTitle } from '@/components/ui/SectionTitle'
-import { Users, Bath, Wind } from 'lucide-react'
+import { Users, Bath, Wind, Lock } from 'lucide-react'
 
 const rooms = [
   {
@@ -9,77 +8,94 @@ const rooms = [
     name: 'Cuarto Valle',
     type: 'Privado',
     description:
-      'Cama matrimonial, decoración colonial minimalista en tonos cálidos con detalles azules. Baño privado con ducha caliente.',
+      'Cama matrimonial, decoración colonial minimalista con detalles azules. Baño privado con ducha caliente.',
     capacity: 2,
     bath: 'Privado',
     priceFrom: 'Desde DOP 2,400',
+    priceSub: '≈ $40 USD / noche',
+    accentClass: 'bg-verde-fresco',
   },
   {
     id: 'compartida',
     name: 'Habitación Compartida',
     type: 'Compartido',
     description:
-      'Literas en ambiente acogedor con áreas comunes diseñadas para socializar. La experiencia hostal clásica.',
+      'Literas en ambiente social. Áreas comunes diseñadas para conocer gente y vivir la experiencia hostal.',
     capacity: 4,
     bath: 'Compartido',
     priceFrom: 'Desde DOP 900',
+    priceSub: '≈ $15 USD / noche',
+    accentClass: 'bg-royal-blue',
   },
 ]
 
 export function RoomsPreview() {
   return (
-    <section className="py-20 bg-nomada-cream">
+    <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <SectionTitle
-          title="Habitaciones"
-          subtitle="Elige tu espacio — privacidad o comunidad, tú decides."
-          centered
-        />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
+          <div>
+            <p className="text-verde-fresco text-xs font-semibold tracking-[0.2em] uppercase mb-2">
+              Habitaciones
+            </p>
+            <h2 className="text-4xl font-bold text-carbon">Elige tu espacio.</h2>
+          </div>
+          <Link
+            href="/habitaciones"
+            className="text-royal-blue font-semibold text-sm hover:underline shrink-0"
+          >
+            Ver todas las habitaciones →
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {rooms.map((room) => (
             <div
               key={room.id}
-              className="bg-white rounded-2xl overflow-hidden shadow-sm border border-nomada-sage-light"
+              className="rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
             >
-              <div className="h-56 bg-nomada-green/20 flex items-center justify-center">
-                <span className="text-nomada-green font-medium">{room.name}</span>
+              {/* Foto placeholder — reemplazar con next/image en producción */}
+              <div className={`h-60 ${room.accentClass} relative overflow-hidden`}>
+                <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_30%_70%,_white_1px,_transparent_1px)] bg-[size:30px_30px]" />
+                <div className="absolute bottom-4 left-4">
+                  <span className="bg-white/20 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wide">
+                    {room.type}
+                  </span>
+                </div>
               </div>
-              <div className="p-6">
+
+              <div className="p-6 bg-white">
                 <div className="flex justify-between items-start mb-3">
-                  <div>
-                    <span className="text-xs font-medium text-nomada-green bg-nomada-sage-light px-2 py-1 rounded-full uppercase tracking-wide">
-                      {room.type}
-                    </span>
-                    <h3 className="text-xl font-bold mt-2">{room.name}</h3>
+                  <h3 className="text-xl font-bold text-carbon">{room.name}</h3>
+                  <div className="text-right shrink-0 ml-4">
+                    <p className="text-carbon font-bold text-sm">{room.priceFrom}</p>
+                    <p className="text-gray-400 text-xs">{room.priceSub}</p>
                   </div>
-                  <p className="text-nomada-green font-semibold text-sm">{room.priceFrom}</p>
                 </div>
-                <p className="text-gray-600 text-sm mb-4">{room.description}</p>
-                <div className="flex gap-4 text-sm text-gray-500 mb-4">
+
+                <p className="text-gray-500 text-sm mb-5 leading-relaxed">{room.description}</p>
+
+                <div className="flex flex-wrap gap-3 text-xs text-gray-400 mb-5">
                   <span className="flex items-center gap-1">
-                    <Users size={14} />
-                    {room.capacity} huéspedes
+                    <Users size={13} /> {room.capacity} huéspedes
                   </span>
                   <span className="flex items-center gap-1">
-                    <Bath size={14} />
-                    Baño {room.bath}
+                    <Bath size={13} /> Baño {room.bath}
                   </span>
                   <span className="flex items-center gap-1">
-                    <Wind size={14} />
-                    AC
+                    <Wind size={13} /> AC
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Lock size={13} /> Smart Lock
                   </span>
                 </div>
-                <Button variant="outline" size="sm" href="/reservar">
-                  Reservar
+
+                <Button variant="royal" size="sm" href="/reservar">
+                  Reservar →
                 </Button>
               </div>
             </div>
           ))}
-        </div>
-        <div className="text-center mt-8">
-          <Link href="/habitaciones" className="text-nomada-green font-medium hover:underline">
-            Ver todas las habitaciones →
-          </Link>
         </div>
       </div>
     </section>

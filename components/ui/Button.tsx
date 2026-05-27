@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { clsx } from 'clsx'
 import { twMerge } from 'tailwind-merge'
 
-type ButtonVariant = 'primary' | 'outline' | 'ghost'
+type ButtonVariant = 'primary' | 'outline' | 'ghost' | 'royal' | 'outline-white'
 type ButtonSize = 'sm' | 'md' | 'lg'
 
 type ButtonAsButton = React.ButtonHTMLAttributes<HTMLButtonElement> & {
@@ -23,19 +23,21 @@ type ButtonAsLink = {
 type ButtonProps = ButtonAsButton | ButtonAsLink
 
 const variantClasses: Record<ButtonVariant, string> = {
-  primary: 'bg-nomada-green text-white hover:bg-nomada-green-dark',
-  outline: 'border-2 border-nomada-green text-nomada-green hover:bg-nomada-sage-light',
-  ghost: 'text-nomada-green hover:bg-nomada-sage-light',
+  primary:         'bg-verde-fresco text-white hover:bg-verde-fresco-dark',
+  outline:         'border-2 border-verde-fresco text-verde-fresco hover:bg-verde-fresco-light',
+  ghost:           'text-verde-fresco hover:bg-verde-fresco-light',
+  royal:           'bg-royal-blue text-white hover:bg-royal-blue-dark',
+  'outline-white': 'border-2 border-white text-white hover:bg-white/10',
 }
 
 const sizeClasses: Record<ButtonSize, string> = {
   sm: 'px-3 py-1.5 text-sm',
   md: 'px-5 py-2.5 text-base',
-  lg: 'px-7 py-3.5 text-lg',
+  lg: 'px-7 py-3.5 text-lg font-semibold',
 }
 
 const baseClasses =
-  'inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-nomada-green disabled:opacity-50'
+  'inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-verde-fresco disabled:opacity-50'
 
 export function Button({
   variant = 'primary',

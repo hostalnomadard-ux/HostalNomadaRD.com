@@ -1,32 +1,68 @@
-import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
+import { Star } from 'lucide-react'
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center bg-nomada-green overflow-hidden">
-      {/* Background overlay pattern */}
-      <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_20%_50%,_#C8D4BF_1px,_transparent_1px)] bg-[size:40px_40px]" />
+    <section className="relative min-h-[92vh] flex flex-col justify-end overflow-hidden">
+      {/* Fondo — reemplazar con next/image con foto de fachada en producción */}
+      <div className="absolute inset-0 bg-carbon">
+        {/* Patrón blueprint sutil como placeholder */}
+        <div
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: `repeating-linear-gradient(
+              0deg, #2B5DB8 0px, #2B5DB8 1px, transparent 1px, transparent 60px
+            ), repeating-linear-gradient(
+              90deg, #2B5DB8 0px, #2B5DB8 1px, transparent 1px, transparent 60px
+            )`,
+          }}
+        />
+      </div>
 
-      <div className="relative max-w-6xl mx-auto px-4 py-20">
-        <div className="max-w-2xl">
-          <p className="text-nomada-sage text-sm font-medium tracking-widest uppercase mb-4">
-            Santiago de los Caballeros, RD
-          </p>
-          <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
-            Tu hogar en el corazón histórico
-          </h1>
-          <p className="text-nomada-sage text-lg md:text-xl mb-10 leading-relaxed">
-            Edificio colonial de más de 75 años restaurado para el viajero moderno.
-            Habitaciones privadas y compartidas a pasos del Monumento y la vida nocturna.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" href="/reservar">
-              Reservar ahora
-            </Button>
-            <Button size="lg" variant="outline" href="/habitaciones">
-              Ver habitaciones
-            </Button>
-          </div>
+      {/* Overlay gradiente */}
+      <div className="absolute inset-0 bg-gradient-to-t from-carbon via-carbon/60 to-transparent" />
+
+      {/* Contenido */}
+      <div className="relative max-w-6xl mx-auto px-4 pb-16 pt-32 w-full">
+        <p className="text-verde-fresco text-xs font-semibold tracking-[0.2em] uppercase mb-4">
+          Benito Monción esq. Máximo Gómez · Santiago, RD
+        </p>
+
+        <h1 className="text-5xl md:text-7xl font-bold text-white leading-[1.05] mb-6 max-w-3xl">
+          75 años en la calle más histórica de Santiago.
+        </h1>
+
+        <p className="text-gray-300 text-lg md:text-xl mb-10 max-w-xl leading-relaxed">
+          Hostal boutique + Cervecería Búcaro en el centro histórico.
+          Habitaciones privadas y compartidas con carácter.
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-4 mb-10">
+          <Button size="lg" href="/reservar">
+            Reservar habitación
+          </Button>
+          <Button size="lg" variant="outline-white" href="/cerveceria">
+            Conoce la Cervecería →
+          </Button>
+        </div>
+
+        {/* Rating strip */}
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-400">
+          <span className="flex items-center gap-1.5">
+            <Star size={14} className="text-yellow-400 fill-yellow-400" />
+            <span className="text-white font-semibold">4.64</span>
+            <span>Airbnb</span>
+          </span>
+          <span className="w-px h-4 bg-gray-600 hidden sm:block" />
+          <span className="flex items-center gap-1.5">
+            <Star size={14} className="text-yellow-400 fill-yellow-400" />
+            <span className="text-white font-semibold">4.69</span>
+            <span>Hostelworld</span>
+          </span>
+          <span className="w-px h-4 bg-gray-600 hidden sm:block" />
+          <span>457 reseñas</span>
+          <span className="w-px h-4 bg-gray-600 hidden sm:block" />
+          <span className="text-verde-fresco font-medium">🍺 Cervecería Búcaro</span>
         </div>
       </div>
     </section>

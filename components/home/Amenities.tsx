@@ -1,34 +1,46 @@
-import { SectionTitle } from '@/components/ui/SectionTitle'
-import { Wifi, Wind, Lock, PawPrint, Car, Shirt, Droplets, Users } from 'lucide-react'
+import { Wifi, Wind, Lock, PawPrint, Car, Shirt, Droplets, Users, Beer } from 'lucide-react'
 
 const amenities = [
-  { icon: Wifi, label: 'WiFi Gratis' },
-  { icon: Wind, label: 'Aire Acondicionado' },
-  { icon: Lock, label: 'Cerradura Inteligente' },
-  { icon: PawPrint, label: 'Mascotas OK' },
-  { icon: Car, label: 'Estacionamiento' },
-  { icon: Shirt, label: 'Toallas y Sábanas' },
-  { icon: Droplets, label: 'Ducha Caliente' },
-  { icon: Users, label: 'Sala Común' },
+  { icon: Wifi,     label: 'WiFi Gratis',        highlight: false },
+  { icon: Wind,     label: 'Aire Acondicionado',  highlight: false },
+  { icon: Lock,     label: 'Smart Lock 24h',      highlight: false },
+  { icon: PawPrint, label: 'Mascotas OK',         highlight: false },
+  { icon: Car,      label: 'Estacionamiento',     highlight: false },
+  { icon: Shirt,    label: 'Toallas y Sábanas',   highlight: false },
+  { icon: Droplets, label: 'Ducha Caliente',      highlight: false },
+  { icon: Users,    label: 'Sala Común',          highlight: false },
+  { icon: Beer,     label: 'Cervecería Búcaro',   highlight: true  },
 ]
 
 export function Amenities() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-cream">
       <div className="max-w-6xl mx-auto px-4">
-        <SectionTitle
-          title="Todo lo que necesitas"
-          subtitle="Sin sorpresas. Sin extras ocultos."
-          centered
-        />
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
-          {amenities.map(({ icon: Icon, label }) => (
+        <div className="text-center mb-12">
+          <p className="text-verde-fresco text-xs font-semibold tracking-[0.2em] uppercase mb-3">
+            Incluido
+          </p>
+          <h2 className="text-4xl font-bold text-carbon">Todo lo que necesitas.</h2>
+          <p className="text-gray-500 mt-3 text-lg">Sin sorpresas. Sin extras ocultos.</p>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {amenities.map(({ icon: Icon, label, highlight }) => (
             <div
               key={label}
-              className="flex flex-col items-center text-center p-6 rounded-xl bg-nomada-cream hover:bg-nomada-sage-light transition-colors"
+              className={`flex flex-col items-center text-center p-5 rounded-xl transition-colors ${
+                highlight
+                  ? 'bg-royal-blue shadow-md'
+                  : 'bg-white hover:bg-verde-fresco-light'
+              }`}
             >
-              <Icon size={28} className="text-nomada-green mb-3" />
-              <span className="text-sm font-medium text-gray-700">{label}</span>
+              <Icon
+                size={26}
+                className={`mb-3 ${highlight ? 'text-white' : 'text-royal-blue'}`}
+              />
+              <span className={`text-sm font-medium ${highlight ? 'text-white' : 'text-gray-700'}`}>
+                {label}
+              </span>
             </div>
           ))}
         </div>
