@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  /* === Paleta original (mantener para otras páginas) === */
+  --color-nomada-green: #4E6B5A;
+  --color-nomada-green-dark: #3A5244;
+  --color-nomada-sage: #C8D4BF;
+  --color-nomada-sage-light: #E8EDE4;
+  --color-nomada-cream: #F8F7F4;
+
+  /* === Paleta nueva homepage === */
+  --color-verde-fresco: #52B788;
+  --color-verde-fresco-dark: #3D9A6E;
+  --color-verde-fresco-light: #D4EFE2;
+  --color-royal-blue: #2B5DB8;
+  --color-royal-blue-dark: #1E4490;
+  --color-royal-blue-light: #D0DCF5;
+  --color-cream: #F5F0E8;
+  --color-carbon: #1A1A1A;
+  --color-blueprint-blue: #0A2463;
+
+  --font-family-sans: var(--font-space-grotesk), system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-gray-900 font-sans antialiased;
+  }
+}
