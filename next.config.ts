@@ -1,7 +1,19 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  images: {
+    remotePatterns: [
+      { protocol: 'https', hostname: 'secured.sirvoy.com' },
+    ],
+  },
+  async headers() {
+    return [
+      {
+        source: '/api/webhooks/:path*',
+        headers: [{ key: 'Cache-Control', value: 'no-store' }],
+      },
+    ]
+  },
+}
 
-export default nextConfig;
+export default nextConfig
