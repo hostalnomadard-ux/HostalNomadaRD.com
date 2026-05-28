@@ -11,7 +11,7 @@ export function Hero() {
           src="/images/fachada.jpg"
           alt="Fachada Art Déco Hostal Nómada — Benito Monción esq. Máximo Gómez, Santiago"
           fill
-          className="object-cover object-center"
+          className="object-contain object-bottom"
           priority
         />
       </div>
