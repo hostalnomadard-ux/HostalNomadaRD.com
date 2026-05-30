@@ -12,7 +12,7 @@ export function FinalCTA() {
         <h3 className="text-3xl font-bold text-white leading-tight">
           Reserva tu cuarto.
           <span className="block text-white/80 font-normal text-xl mt-1">
-            Desde DOP 900 / noche.
+            Cama full · Baño privado · Smart Lock.
           </span>
         </h3>
         <Button variant="outline-white" size="lg" href="/reservar">

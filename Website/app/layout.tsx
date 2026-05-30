@@ -16,7 +16,11 @@ export const metadata: Metadata = {
     template: '%s | Hostal Nómada',
   },
   description:
-    'Hostal boutique en edificio colonial de más de 75 años en el centro histórico de Santiago de los Caballeros, República Dominicana. Habitaciones privadas y compartidas.',
+    'Hostal boutique en edificio Art Déco de 1948 en el centro histórico de Santiago de los Caballeros, República Dominicana. Habitaciones privadas con carácter.',
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'es_DO',

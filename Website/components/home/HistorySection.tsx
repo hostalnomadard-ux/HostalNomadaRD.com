@@ -1,44 +1,34 @@
+import Image from 'next/image'
+
 export function HistorySection() {
   return (
     <section className="py-20 bg-cream overflow-hidden">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-          {/* Foto / Blueprint placeholder */}
+          {/* Plano blueprint */}
           <div className="relative order-2 lg:order-1">
-            <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-carbon flex items-end">
-              {/* Blueprint pattern */}
-              <div
-                className="absolute inset-0 opacity-20"
-                style={{
-                  background: `
-                    repeating-linear-gradient(0deg, #2B5DB8 0px, #2B5DB8 1px, transparent 1px, transparent 40px),
-                    repeating-linear-gradient(90deg, #2B5DB8 0px, #2B5DB8 1px, transparent 1px, transparent 40px)
-                  `,
-                  backgroundColor: '#0A2463',
-                }}
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-blueprint-blue">
+              <Image
+                src="/images/plano-blueprint.jpg"
+                alt="Plano original 1948 — Arq. Pablo N. Pérez Rancier, Planta Primer Nivel"
+                fill
+                className="object-cover object-top"
               />
-              {/* Rooms layout hint from original blueprint */}
-              <div className="absolute inset-0 flex items-center justify-center opacity-30">
-                <div className="border border-blue-400 w-48 h-32 relative">
-                  <div className="absolute top-0 left-0 right-0 h-px bg-blue-400" />
-                  <div className="absolute bottom-0 left-0 right-0 h-px bg-blue-400" />
-                  <div className="absolute top-1/2 left-0 right-0 h-px bg-blue-400" />
-                  <div className="absolute top-0 bottom-0 left-1/3 w-px bg-blue-400" />
-                  <span className="absolute top-2 left-2 text-blue-300 text-[8px] font-mono">Consultas</span>
-                  <span className="absolute bottom-2 left-2 text-blue-300 text-[8px] font-mono">Laboratorio</span>
-                  <span className="absolute top-2 right-2 text-blue-300 text-[8px] font-mono">Sala de Espera</span>
-                </div>
-              </div>
-              <div className="relative p-8 text-white/60 text-xs font-mono leading-relaxed">
-                Proyecto: Consultoría y Residencia<br />
-                Arq. Pablo N. Pérez Rancier<br />
-                Santiago, R.D. — Mayo 1, 1948
-              </div>
+            </div>
+
+            {/* Badge entrada */}
+            <div className="absolute -bottom-4 -right-4 overflow-hidden rounded-xl shadow-lg border border-gray-100 w-24 h-24">
+              <Image
+                src="/images/entrada.jpg"
+                alt="Entrada Art Déco #34 — Hostal Nómada"
+                fill
+                className="object-cover"
+              />
             </div>
 
             {/* Badge patrimonio */}
-            <div className="absolute -bottom-4 -right-4 bg-white rounded-xl shadow-lg px-4 py-3 border border-gray-100">
+            <div className="absolute -top-3 -left-3 bg-white rounded-xl shadow-lg px-4 py-3 border border-gray-100">
               <p className="text-verde-fresco font-bold text-sm">Patrimonio Histórico</p>
               <p className="text-gray-500 text-xs">Guía de Arquitectura · Pág. 105</p>
             </div>

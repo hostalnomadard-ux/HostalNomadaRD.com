@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
@@ -18,11 +19,15 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
       <nav className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-1.5">
-          <span className="w-2 h-2 rounded-full bg-verde-fresco" aria-hidden="true" />
-          <span className="text-xl font-bold text-carbon tracking-wide uppercase">
-            Hostal Nómada
-          </span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="Hostal Nómada"
+            width={48}
+            height={48}
+            className="object-contain rounded-lg"
+            priority
+          />
         </Link>
 
         {/* Desktop */}

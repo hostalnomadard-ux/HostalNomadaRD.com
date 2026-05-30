@@ -1,21 +1,18 @@
+import Image from 'next/image'
 import { Button } from '@/components/ui/Button'
 import { Star } from 'lucide-react'
 
 export function Hero() {
   return (
     <section className="relative min-h-[92vh] flex flex-col justify-end overflow-hidden">
-      {/* Fondo — reemplazar con next/image con foto de fachada en producción */}
+      {/* Fachada real del edificio Art Déco */}
       <div className="absolute inset-0 bg-carbon">
-        {/* Patrón blueprint sutil como placeholder */}
-        <div
-          className="absolute inset-0 opacity-5"
-          style={{
-            backgroundImage: `repeating-linear-gradient(
-              0deg, #2B5DB8 0px, #2B5DB8 1px, transparent 1px, transparent 60px
-            ), repeating-linear-gradient(
-              90deg, #2B5DB8 0px, #2B5DB8 1px, transparent 1px, transparent 60px
-            )`,
-          }}
+        <Image
+          src="/images/fachada.jpg"
+          alt="Fachada Art Déco Hostal Nómada — Benito Monción esq. Máximo Gómez, Santiago"
+          fill
+          className="object-cover object-center"
+          priority
         />
       </div>
 
@@ -34,7 +31,7 @@ export function Hero() {
 
         <p className="text-gray-300 text-lg md:text-xl mb-10 max-w-xl leading-relaxed">
           Hostal boutique + Cervecería Búcaro en el centro histórico.
-          Habitaciones privadas y compartidas con carácter.
+          Habitaciones privadas con carácter.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mb-10">

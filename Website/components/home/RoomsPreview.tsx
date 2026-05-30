@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
 import { Users, Bath, Wind, Lock } from 'lucide-react'
@@ -5,27 +6,27 @@ import { Users, Bath, Wind, Lock } from 'lucide-react'
 const rooms = [
   {
     id: 'valle',
-    name: 'Cuarto Valle',
+    name: 'Valle',
     type: 'Privado',
-    description:
-      'Cama matrimonial, decoración colonial minimalista con detalles azules. Baño privado con ducha caliente.',
-    capacity: 2,
-    bath: 'Privado',
-    priceFrom: 'Desde DOP 2,400',
-    priceSub: '≈ $40 USD / noche',
-    accentClass: 'bg-verde-fresco',
+    description: 'Cama full size, baño privado, detalles en azul royal. El cuarto clásico del hostal en pleno centro histórico.',
+    rating: '⭐ 4.64 · 11 reseñas',
+    image: '/images/cuarto-valle.jpg',
   },
   {
-    id: 'compartida',
-    name: 'Habitación Compartida',
-    type: 'Compartido',
-    description:
-      'Literas en ambiente social. Áreas comunes diseñadas para conocer gente y vivir la experiencia hostal.',
-    capacity: 4,
-    bath: 'Compartido',
-    priceFrom: 'Desde DOP 900',
-    priceSub: '≈ $15 USD / noche',
-    accentClass: 'bg-royal-blue',
+    id: 'jungle',
+    name: 'Jungle',
+    type: 'Privado',
+    description: 'Cama full size, baño privado, ambiente tropical con luz natural. Tranquilidad urbana en el corazón de Santiago.',
+    rating: '⭐ 4.5 · 6 reseñas',
+    image: '/images/cuarto-jungle.jpg',
+  },
+  {
+    id: 'mountain',
+    name: 'Mountain',
+    type: 'Privado',
+    description: 'Cama full size, baño privado y balcón con vista a la ciudad. Guest Favorite en Airbnb — ⭐ 5.0 perfecto.',
+    rating: '⭐ 5.0 · 8 reseñas · Guest Favorite',
+    image: '/images/cuarto-mountain.jpg',
   },
 ]
 
@@ -48,39 +49,38 @@ export function RoomsPreview() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {rooms.map((room) => (
             <div
               key={room.id}
               className="rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
             >
-              {/* Foto placeholder — reemplazar con next/image en producción */}
-              <div className={`h-60 ${room.accentClass} relative overflow-hidden`}>
-                <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_30%_70%,_white_1px,_transparent_1px)] bg-[size:30px_30px]" />
+              <div className="h-52 relative overflow-hidden">
+                <Image
+                  src={room.image}
+                  alt={`Cuarto ${room.name} — Hostal Nómada`}
+                  fill
+                  className="object-cover"
+                />
                 <div className="absolute bottom-4 left-4">
-                  <span className="bg-white/20 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wide">
+                  <span className="bg-black/40 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wide">
                     {room.type}
                   </span>
                 </div>
               </div>
 
-              <div className="p-6 bg-white">
-                <div className="flex justify-between items-start mb-3">
-                  <h3 className="text-xl font-bold text-carbon">{room.name}</h3>
-                  <div className="text-right shrink-0 ml-4">
-                    <p className="text-carbon font-bold text-sm">{room.priceFrom}</p>
-                    <p className="text-gray-400 text-xs">{room.priceSub}</p>
-                  </div>
-                </div>
+              <div className="p-5 bg-white">
+                <h3 className="text-xl font-bold text-carbon mb-1">{room.name}</h3>
+                <p className="text-xs text-verde-fresco font-medium mb-3">{room.rating}</p>
 
-                <p className="text-gray-500 text-sm mb-5 leading-relaxed">{room.description}</p>
+                <p className="text-gray-500 text-sm mb-4 leading-relaxed">{room.description}</p>
 
                 <div className="flex flex-wrap gap-3 text-xs text-gray-400 mb-5">
                   <span className="flex items-center gap-1">
-                    <Users size={13} /> {room.capacity} huéspedes
+                    <Users size={13} /> 2 huéspedes
                   </span>
                   <span className="flex items-center gap-1">
-                    <Bath size={13} /> Baño {room.bath}
+                    <Bath size={13} /> Baño privado
                   </span>
                   <span className="flex items-center gap-1">
                     <Wind size={13} /> AC
