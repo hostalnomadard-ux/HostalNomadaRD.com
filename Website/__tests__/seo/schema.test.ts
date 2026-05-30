@@ -28,16 +28,16 @@ describe('LodgingBusiness schema', () => {
   })
 
   it('has geo coordinates', () => {
-    expect(lodgingSchema.geo.latitude).toBe('19.4521542')
-    expect(lodgingSchema.geo.longitude).toBe('-70.7066258')
+    expect(lodgingSchema.geo.latitude).toBe(19.4521542)
+    expect(lodgingSchema.geo.longitude).toBe(-70.7066258)
   })
 
-  it('has ISO 8601 checkinTime', () => {
-    expect(lodgingSchema.checkinTime).toBe('T15:00')
+  it('has valid checkinTime format (HH:MM:SS)', () => {
+    expect(lodgingSchema.checkinTime).toBe('15:00:00')
   })
 
-  it('has ISO 8601 checkoutTime', () => {
-    expect(lodgingSchema.checkoutTime).toBe('T11:00')
+  it('has valid checkoutTime format (HH:MM:SS)', () => {
+    expect(lodgingSchema.checkoutTime).toBe('11:00:00')
   })
 
   it('has real reviewCount matching page display', () => {

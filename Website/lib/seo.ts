@@ -16,16 +16,16 @@ export const lodgingSchema = {
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: '19.4521542',
-    longitude: '-70.7066258',
+    latitude: 19.4521542,
+    longitude: -70.7066258,
   },
-  hasMap: 'https://maps.google.com/?q=Hostal+Nómada+Santiago+de+los+Caballeros',
+  hasMap: 'https://maps.google.com/?q=Hostal+N%C3%B3mada+Santiago+de+los+Caballeros',
   image: [
     'https://hostalnomadard.com/images/fachada.jpg',
     'https://hostalnomadard.com/images/entrada.jpg',
   ],
-  checkinTime: 'T15:00',
-  checkoutTime: 'T11:00',
+  checkinTime: '15:00:00',
+  checkoutTime: '11:00:00',
   petsAllowed: true,
   priceRange: 'DOP 900–2400',
   currenciesAccepted: 'DOP, USD',
@@ -46,8 +46,4 @@ export const lodgingSchema = {
     bestRating: '5',
     worstRating: '1',
   },
-  sameAs: [
-    'https://www.airbnb.com/rooms/hostalnomada',
-    'https://www.hostelworld.com/hosteldetails.php/Hostal-Nomada',
-  ],
 }
