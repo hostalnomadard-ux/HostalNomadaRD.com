@@ -21,10 +21,28 @@ export const metadata: Metadata = {
     icon: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
+  alternates: {
+    canonical: 'https://hostalnomadard.com',
+    languages: {
+      'es-DO': 'https://hostalnomadard.com',
+    },
+  },
   openGraph: {
     type: 'website',
     locale: 'es_DO',
     siteName: 'Hostal Nómada',
+    images: [
+      {
+        url: '/images/fachada.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Hostal Nómada — Edificio Art Déco 1948, Centro Histórico Santiago de los Caballeros, RD',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@HostalNomadaRD',
   },
 }
 
