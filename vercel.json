@@ -1,6 +1,5 @@
 {
   "framework": "nextjs",
-  "rootDirectory": "Website",
   "buildCommand": "npm run build",
   "installCommand": "npm install",
   "redirects": [
