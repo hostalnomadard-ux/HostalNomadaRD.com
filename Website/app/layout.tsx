@@ -48,12 +48,24 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Hostal Nómada',
+    url: 'https://hostalnomadard.com',
+    inLanguage: 'es',
+  }
+
   return (
     <html lang="es" className={spaceGrotesk.variable}>
       <head>
         <link rel="preconnect" href="https://maps.googleapis.com" />
         <link rel="preconnect" href="https://maps.gstatic.com" crossOrigin="" />
         <link rel="preconnect" href="https://secured.sirvoy.com" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
       </head>
       <body className="min-h-screen flex flex-col">
         <Navbar />
