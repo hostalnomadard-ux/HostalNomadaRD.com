@@ -4,14 +4,14 @@ import { Heart, Home, Globe } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Nosotros',
   description:
-    'Conoce a los anfitriones de Hostal Nómada — una pareja joven apasionada por el turismo local en Santiago de los Caballeros, RD.',
+    'Conoce la historia de Hostal Nómada — una pareja joven apasionada por el turismo local en Santiago de los Caballeros, RD. Edificio Art Déco de 1948.',
 }
 
 const values = [
   {
     icon: Home,
     title: 'Historia viva',
-    text: 'Nuestro edificio tiene más de 75 años. Nació como hospital, fue abandonado por más de 20 años, y lo restauramos conservando su alma colonial.',
+    text: 'Nuestro edificio fue diseñado en 1948 por el arquitecto Pablo N. Pérez Rancier como consultorio médico y residencia del Dr. José de Jesús Jiménez Almonte. Abandonado por más de 20 años, lo restauramos preservando su alma Art Déco.',
   },
   {
     icon: Heart,
@@ -40,10 +40,17 @@ export default function NosotrosPage() {
         <div className="bg-nomada-green rounded-2xl p-8 md:p-12 text-white mb-12">
           <h2 className="text-2xl font-bold mb-4">El edificio</h2>
           <p className="text-nomada-sage leading-relaxed text-lg">
-            Con más de 75 años de historia, este emblemático edificio comenzó como un hospital y ha
-            sido restaurado tras permanecer abandonado por más de 20 años. Su arquitectura conserva
-            el encanto colonial con toques modernos. La fachada en tonos verdes y detalles azules
-            destaca en un entorno urbano rodeado de calles peatonales y luces colgantes.
+            Este edificio Art Déco fue diseñado en 1948 por el arquitecto Pablo N. Pérez Rancier
+            para el Dr. José de Jesús Jiménez Almonte — cardiólogo, botánico y campeón nacional
+            dominicano de ajedrez. La orquídea endémica dominicana{' '}
+            <em>Tolumnia jimenezii</em> lleva su nombre. El edificio figura en la Guía de
+            Arquitectura de Santiago, página 105.
+          </p>
+          <p className="text-nomada-sage leading-relaxed text-lg mt-4">
+            Tras décadas de abandono, fue restaurado por sus actuales propietarios conservando la
+            fachada original, los detalles en hierro forjado y la disposición interior. Hoy alberga
+            el hostal y la Cervecería Búcaro en el mismo espacio donde el Dr. Jiménez Almonte
+            atendió pacientes hace más de 75 años.
           </p>
         </div>
 
