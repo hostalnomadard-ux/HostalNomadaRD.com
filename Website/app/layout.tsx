@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     canonical: 'https://hostalnomadard.com',
     languages: {
       'es-DO': 'https://hostalnomadard.com',
+      'x-default': 'https://hostalnomadard.com',
     },
   },
   openGraph: {

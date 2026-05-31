@@ -14,10 +14,21 @@ export const metadata: Metadata = {
   description:
     'Hostal boutique en edificio Art Déco de 1948. Habitaciones privadas y compartidas en el centro histórico de Santiago de los Caballeros, RD. Cervecería Búcaro en el mismo espacio.',
   openGraph: {
+    type: 'website',
+    locale: 'es_DO',
+    siteName: 'Hostal Nómada',
     title: 'Hostal Nómada — Santiago de los Caballeros, RD',
     description:
       'Edificio Art Déco de 1948 en el corazón histórico de Santiago, RD. Hostal + Cervecería Búcaro.',
     url: 'https://hostalnomadard.com',
+    images: [
+      {
+        url: '/images/fachada.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Hostal Nómada — Edificio Art Déco 1948, Centro Histórico Santiago de los Caballeros, RD',
+      },
+    ],
   },
 }
 
