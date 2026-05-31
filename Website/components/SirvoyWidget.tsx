@@ -62,7 +62,7 @@ export function SirvoyWidget({ engineId }: SirvoyWidgetProps) {
     <div
       ref={containerRef}
       data-testid="sirvoy-widget-container"
-      className="w-full min-h-[200px]"
+      className="w-full min-h-[580px]"
     />
   )
 }

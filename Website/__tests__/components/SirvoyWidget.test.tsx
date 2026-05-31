@@ -11,4 +11,11 @@ describe('SirvoyWidget', () => {
     render(<SirvoyWidget engineId="" />)
     expect(screen.getByText(/sirvoy/i)).toBeInTheDocument()
   })
+
+  it('widget container has adequate min-height to prevent CLS', () => {
+    const engineId = 'test-engine-id'
+    const { getByTestId } = render(<SirvoyWidget engineId={engineId} />)
+    const container = getByTestId('sirvoy-widget-container')
+    expect(container.className).toContain('min-h-[580px]')
+  })
 })
