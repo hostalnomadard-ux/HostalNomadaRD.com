@@ -12,4 +12,10 @@ describe('ContactoPage', () => {
     render(<ContactoPage />)
     expect(screen.getByText(/Benito Monción 29/)).toBeInTheDocument()
   })
+
+  it('WhatsApp link has noopener noreferrer rel for security', () => {
+    render(<ContactoPage />)
+    const link = screen.getByText('Escribir por WhatsApp').closest('a')
+    expect(link).toHaveAttribute('rel', 'noopener noreferrer')
+  })
 })
