@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import { RoomCard, type Room } from '@/components/rooms/RoomCard'
 
 export const metadata: Metadata = {
-  title: 'Habitaciones',
+  title: 'Habitaciones en Santiago RD — Hostal Nómada',
   description:
-    'Habitaciones privadas y compartidas en Hostal Nómada. Cuarto Valle con baño privado y opciones compartidas en el centro histórico de Santiago, RD.',
+    'Habitaciones privadas y compartidas en Hostal Nómada, centro histórico de Santiago de los Caballeros, RD. Baño privado, AC, WiFi. Desde DOP 900/noche.',
 }
 
 const rooms: Room[] = [
@@ -54,7 +54,7 @@ export default function HabitacionesPage() {
     <div className="py-16 bg-nomada-cream min-h-screen">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Habitaciones</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Habitaciones en Santiago de los Caballeros, RD</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Todas nuestras habitaciones incluyen WiFi, AC y acceso a las áreas comunes. Precios por
             persona/noche. Impuestos incluidos.

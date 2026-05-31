@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import { MapPin, Clock, Phone } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Contacto',
+  title: 'Contacto — Hostal Nómada Santiago RD',
   description:
-    'Contáctanos en Hostal Nómada. #43 C. Máximo Gómez, Santiago de los Caballeros, RD. WhatsApp disponible.',
+    'Contáctanos en Hostal Nómada. C/ Benito Monción 29, esq. Máximo Gómez 34, Centro Histórico, Santiago de los Caballeros, RD. WhatsApp: +1 (829) 755-7202.',
 }
 
 export default function ContactoPage() {
@@ -36,8 +36,8 @@ export default function ContactoPage() {
                   <MapPin size={20} className="text-nomada-green mt-0.5 shrink-0" />
                   <div>
                     <p className="font-semibold">Dirección</p>
-                    <p className="text-gray-600 text-sm">#43 C. Máximo Gómez</p>
-                    <p className="text-gray-600 text-sm">Santiago de los Caballeros, RD</p>
+                    <p className="text-gray-600 text-sm">C/ Benito Monción 29, esq. Máximo Gómez 34</p>
+                    <p className="text-gray-600 text-sm">Centro Histórico, Santiago de los Caballeros, RD</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -59,7 +59,7 @@ export default function ContactoPage() {
             </div>
 
             <a
-              href="https://wa.me/18091234567"
+              href="https://wa.me/18297557202"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-full rounded-md font-medium transition-colors bg-nomada-green text-white hover:bg-nomada-green-dark px-7 py-3.5 text-lg"

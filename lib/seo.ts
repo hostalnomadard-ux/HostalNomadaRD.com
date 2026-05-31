@@ -3,14 +3,22 @@ export const lodgingSchema = {
   '@type': 'LodgingBusiness',
   name: 'Hostal Nómada',
   description:
-    'Hostal boutique en edificio colonial de más de 75 años en el centro histórico de Santiago de los Caballeros, República Dominicana.',
+    'Hostal boutique en edificio Art Déco de 1948 en el centro histórico de Santiago de los Caballeros, República Dominicana. Habitaciones privadas y compartidas con carácter. Cervecería Búcaro en el mismo espacio.',
   url: 'https://hostalnomadard.com',
-  telephone: '+18091234567',
+  telephone: '+18297557202',
+  image: 'https://hostalnomadard.com/images/fachada.jpg',
+  priceRange: 'DOP 900 – DOP 2,400',
+  hasMap: 'https://maps.google.com/?cid=14151765001684893002',
+  sameAs: [
+    'https://www.airbnb.com/users/show/hostalnomada',
+    'https://www.hostelworld.com/hostels/north-america/dominican-republic/santiago-de-los-caballeros/',
+  ],
   address: {
     '@type': 'PostalAddress',
-    streetAddress: '#43 C. Máximo Gómez',
+    streetAddress: 'C/ Benito Monción 29, esq. Máximo Gómez 34',
     addressLocality: 'Santiago de los Caballeros',
     addressRegion: 'Santiago',
+    postalCode: '51000',
     addressCountry: 'DO',
   },
   geo: {
@@ -22,14 +30,18 @@ export const lodgingSchema = {
   checkoutTime: '11:00',
   petsAllowed: true,
   amenityFeature: [
-    { '@type': 'LocationFeatureSpecification', name: 'WiFi', value: true },
-    { '@type': 'LocationFeatureSpecification', name: 'Air conditioning', value: true },
-    { '@type': 'LocationFeatureSpecification', name: 'Free parking', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'WiFi gratuito', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Aire acondicionado', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Estacionamiento gratuito', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Smart Lock 24h', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Mascotas permitidas', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Cervecería en el edificio', value: true },
   ],
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.64',
-    reviewCount: '11',
+    reviewCount: '457',
     bestRating: '5',
+    worstRating: '1',
   },
 }
