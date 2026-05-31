@@ -61,7 +61,7 @@ export default function CerveceriaPage() {
           </div>
         </div>
 
-        <div className="text-center flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button href="https://wa.me/18297557202" size="lg">
             Consultar por WhatsApp
           </Button>
