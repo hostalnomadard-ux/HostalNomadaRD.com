@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Users, Bath, Wind, Check } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 
@@ -11,13 +12,32 @@ export interface Room {
   bath: string
   amenities: string[]
   priceFrom: string
+  rating?: string
+  image?: string
 }
 
 export function RoomCard({ room }: { room: Room }) {
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-nomada-sage-light flex flex-col">
-      <div className="h-64 bg-nomada-green/20 flex items-center justify-center" aria-label="foto de habitación">
-        <span className="text-nomada-green/40 text-4xl">🏨</span>
+      <div className="relative h-64" aria-label="foto de habitación">
+        {room.image ? (
+          <Image
+            src={room.image}
+            alt={room.name}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        ) : (
+          <div className="h-full bg-nomada-green/20 flex items-center justify-center">
+            <span className="text-nomada-green/40 text-4xl">🏨</span>
+          </div>
+        )}
+        {room.rating && (
+          <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full px-2.5 py-1 text-xs font-semibold text-gray-800">
+            ⭐ {room.rating}
+          </div>
+        )}
       </div>
       <div className="p-6 flex flex-col flex-1">
         <div className="flex justify-between items-start mb-3">

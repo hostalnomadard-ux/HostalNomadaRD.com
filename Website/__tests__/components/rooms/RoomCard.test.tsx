@@ -29,4 +29,37 @@ describe('RoomCard', () => {
     const link = screen.getByRole('link', { name: /reservar/i })
     expect(link).toHaveAttribute('href', '/reservar')
   })
+
+  it('renders room image when image prop provided', () => {
+    const roomWithImage = {
+      id: 'valle',
+      name: 'Cuarto Valle',
+      type: 'Privado' as const,
+      description: 'Test description',
+      capacity: 2,
+      beds: 1,
+      bath: 'Privado',
+      amenities: ['WiFi'],
+      priceFrom: 'Desde DOP 2,400',
+      image: '/images/cuarto-valle.jpg',
+    }
+    const { getByAltText } = render(<RoomCard room={roomWithImage} />)
+    expect(getByAltText('Cuarto Valle')).toBeInTheDocument()
+  })
+
+  it('renders placeholder when no image prop', () => {
+    const roomNoImage = {
+      id: 'valle',
+      name: 'Cuarto Valle',
+      type: 'Privado' as const,
+      description: 'Test description',
+      capacity: 2,
+      beds: 1,
+      bath: 'Privado',
+      amenities: ['WiFi'],
+      priceFrom: 'Desde DOP 2,400',
+    }
+    const { getByLabelText } = render(<RoomCard room={roomNoImage} />)
+    expect(getByLabelText('foto de habitación')).toBeInTheDocument()
+  })
 })
