@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import { Heart, Home, Globe } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Nosotros',
+  title: 'Quiénes Somos — Hostal Nómada Santiago RD',
   description:
-    'Conoce a los anfitriones de Hostal Nómada — una pareja joven apasionada por el turismo local en Santiago de los Caballeros, RD.',
+    'Conoce a los anfitriones de Hostal Nómada — una pareja joven apasionada por el turismo local en Santiago de los Caballeros, RD. 14 años de experiencia como anfitriones.',
 }
 
 const values = [
@@ -30,7 +30,7 @@ export default function NosotrosPage() {
     <div className="py-16 min-h-screen">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Nuestra historia</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Hostal Nómada — Quiénes Somos</h1>
           <p className="text-xl text-gray-600 leading-relaxed">
             Nómada es un hostal acogedor en el centro histórico de Santiago, RD, gestionado por una
             pareja joven que vive aquí con sus 2 perros.

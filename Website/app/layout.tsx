@@ -12,11 +12,14 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://hostalnomadard.com'),
   title: {
-    default: 'Hostal Nómada — Santiago de los Caballeros, RD',
-    template: '%s | Hostal Nómada',
+    default: 'Hostal Nómada — Hospedaje Boutique en Santiago de los Caballeros, RD',
+    template: '%s | Hostal Nómada — Santiago RD',
   },
   description:
-    'Hostal boutique en edificio Art Déco de 1948 en el centro histórico de Santiago de los Caballeros, República Dominicana. Habitaciones privadas con carácter.',
+    'Hostal boutique en edificio Art Déco de 1948 en el centro histórico de Santiago de los Caballeros, República Dominicana. Habitaciones privadas y compartidas con carácter. Cervecería Búcaro.',
+  verification: {
+    google: 'googlefd4e76e26e641327.html',
+  },
   icons: {
     icon: '/favicon.ico',
     apple: '/apple-touch-icon.png',
@@ -25,6 +28,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'es_DO',
     siteName: 'Hostal Nómada',
+    images: [
+      {
+        url: '/images/fachada.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Fachada Art Déco Hostal Nómada — Centro Histórico Santiago, RD',
+      },
+    ],
   },
 }
 
