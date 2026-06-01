@@ -10,14 +10,22 @@ import { Reviews } from '@/components/home/Reviews'
 import { FinalCTA } from '@/components/home/FinalCTA'
 
 export const metadata: Metadata = {
-  title: 'Hostal Nómada — Santiago de los Caballeros, RD',
+  title: 'Hostal Nómada — Hospedaje Boutique en Santiago de los Caballeros, RD',
   description:
-    'Hostal boutique en edificio Art Déco de 1948. Habitaciones privadas y compartidas en el centro histórico de Santiago de los Caballeros, RD. Cervecería Búcaro en el mismo espacio.',
+    'Hostal boutique en edificio Art Déco de 1948. Habitaciones privadas y compartidas en el centro histórico de Santiago, RD. Cervecería Búcaro en el mismo espacio. ⭐ 4.64 · 457 reseñas.',
   openGraph: {
-    title: 'Hostal Nómada — Santiago de los Caballeros, RD',
+    title: 'Hostal Nómada — Hospedaje Boutique en Santiago de los Caballeros, RD',
     description:
-      'Edificio Art Déco de 1948 en el corazón histórico de Santiago, RD. Hostal + Cervecería Búcaro.',
+      'Edificio Art Déco de 1948 en el corazón histórico de Santiago, RD. Hostal boutique + Cervecería Búcaro. ⭐ 4.64 · 457 reseñas.',
     url: 'https://hostalnomadard.com',
+    images: [
+      {
+        url: '/images/fachada.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Fachada Art Déco Hostal Nómada — Centro Histórico Santiago, RD',
+      },
+    ],
   },
 }
 

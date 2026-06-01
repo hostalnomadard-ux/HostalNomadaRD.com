@@ -11,7 +11,7 @@ export function Hero() {
           src="/images/fachada.jpg"
           alt="Fachada Art Déco Hostal Nómada — Benito Monción esq. Máximo Gómez, Santiago"
           fill
-          className="object-contain object-bottom"
+          className="object-cover object-center"
           priority
         />
       </div>
@@ -26,11 +26,12 @@ export function Hero() {
         </p>
 
         <h1 className="text-5xl md:text-7xl font-bold text-white leading-[1.05] mb-6 max-w-3xl">
-          75 años en la calle más histórica de Santiago.
+          Hostal boutique en el centro histórico de Santiago, RD.
         </h1>
 
         <p className="text-gray-300 text-lg md:text-xl mb-10 max-w-xl leading-relaxed">
-          Hostal boutique + Cervecería Búcaro en el centro histórico.
+          75 años en la calle más histórica de la ciudad.
+          Edificio Art Déco de 1948 + Cervecería Búcaro.
           Habitaciones privadas con carácter.
         </p>
 
