@@ -20,7 +20,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-carbon via-carbon/60 to-transparent" />
 
       {/* Contenido — alineado a la derecha para dejar visible el edificio */}
-      <div className="relative max-w-6xl mx-auto px-4 pb-16 pt-32 w-full flex justify-end">
+      <div className="relative max-w-6xl mx-auto px-4 pb-16 pt-32 w-full flex justify-start">
         <div className="max-w-xl w-full">
           <p className="text-verde-fresco text-xs font-semibold tracking-[0.2em] uppercase mb-4">
             Benito Monción esq. Máximo Gómez · Santiago, RD
