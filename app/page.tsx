@@ -20,10 +20,10 @@ export const metadata: Metadata = {
     url: 'https://hostalnomadard.com',
     images: [
       {
-        url: '/images/fachada.jpg',
+        url: '/images/fachada-esquina.png',
         width: 1200,
         height: 630,
-        alt: 'Fachada Art Déco Hostal Nómada — Centro Histórico Santiago, RD',
+        alt: 'Fachada Art Déco Hostal Nómada — esquina Benito Monción y Máximo Gómez, Santiago RD',
       },
     ],
   },

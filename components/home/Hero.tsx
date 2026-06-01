@@ -8,10 +8,10 @@ export function Hero() {
       {/* Fachada real del edificio Art Déco */}
       <div className="absolute inset-0 bg-carbon">
         <Image
-          src="/images/fachada.jpg"
-          alt="Fachada Art Déco Hostal Nómada — Benito Monción esq. Máximo Gómez, Santiago"
+          src="/images/fachada-esquina.png"
+          alt="Fachada Art Déco Hostal Nómada — esquina Benito Monción y Máximo Gómez, Centro Histórico Santiago RD"
           fill
-          className="object-cover object-center"
+          className="object-cover object-bottom"
           priority
         />
       </div>

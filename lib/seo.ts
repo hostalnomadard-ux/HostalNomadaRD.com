@@ -6,7 +6,7 @@ export const lodgingSchema = {
     'Hostal boutique en edificio Art Déco de 1948 en el centro histórico de Santiago de los Caballeros, República Dominicana. Habitaciones privadas y compartidas con carácter. Cervecería Búcaro en el mismo espacio.',
   url: 'https://hostalnomadard.com',
   telephone: '+18297557202',
-  image: 'https://hostalnomadard.com/images/fachada.jpg',
+  image: 'https://hostalnomadard.com/images/fachada-esquina.png',
   priceRange: 'DOP 900 – DOP 2,400',
   hasMap: 'https://maps.google.com/?cid=14151765001684893002',
   sameAs: [
