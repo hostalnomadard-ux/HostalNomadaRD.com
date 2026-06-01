@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   },
   description:
     'Hostal boutique en edificio Art Déco de 1948 en el centro histórico de Santiago de los Caballeros, República Dominicana. Habitaciones privadas y compartidas con carácter. Cervecería Búcaro.',
+  verification: {
+    google: 'googlefd4e76e26e641327.html',
+  },
   icons: {
     icon: '/favicon.ico',
     apple: '/apple-touch-icon.png',
