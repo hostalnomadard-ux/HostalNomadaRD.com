@@ -1,0 +1,87 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Hostal Nómada" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Hostal Nómada" [ref=e5]
+      - generic [ref=e6]:
+        - link "Habitaciones" [ref=e7] [cursor=pointer]:
+          - /url: /habitaciones
+        - link "Nosotros" [ref=e8] [cursor=pointer]:
+          - /url: /nosotros
+        - link "Cervecería" [ref=e9] [cursor=pointer]:
+          - /url: /cerveceria
+        - link "Contacto" [ref=e10] [cursor=pointer]:
+          - /url: /contacto
+      - link "Reservar" [ref=e12] [cursor=pointer]:
+        - /url: /reservar
+  - main [ref=e13]:
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - heading "Contacto" [level=1] [ref=e17]
+        - paragraph [ref=e18]: Estamos aquí para ayudarte.
+      - generic [ref=e19]:
+        - iframe [ref=e21]:
+          
+        - generic [ref=e22]:
+          - generic [ref=e24]:
+            - generic [ref=e25]:
+              - img [ref=e26]
+              - generic [ref=e29]:
+                - paragraph [ref=e30]: Dirección
+                - paragraph [ref=e31]: C/ Benito Monción 29, esq. Máximo Gómez 34
+                - paragraph [ref=e32]: Centro Histórico, Santiago de los Caballeros, RD
+            - generic [ref=e33]:
+              - img [ref=e34]
+              - generic [ref=e37]:
+                - paragraph [ref=e38]: Horarios
+                - paragraph [ref=e39]: "Check-in: 3:00pm – 11:00pm"
+                - paragraph [ref=e40]: "Check-out: hasta las 11:00am"
+            - generic [ref=e41]:
+              - img [ref=e42]
+              - generic [ref=e44]:
+                - paragraph [ref=e45]: WhatsApp
+                - paragraph [ref=e46]: Respondemos en menos de 1 hora
+          - link "Escribir por WhatsApp" [ref=e47] [cursor=pointer]:
+            - /url: https://wa.me/18297557202
+  - contentinfo [ref=e48]:
+    - generic [ref=e49]:
+      - generic [ref=e50]:
+        - heading "Hostal Nómada" [level=3] [ref=e53]
+        - paragraph [ref=e54]: Edificio Art Déco de 1948 en el corazón histórico de Santiago, RD.
+        - paragraph [ref=e55]: ⭐ 4.64 Airbnb · 4.69 Hostelworld
+      - generic [ref=e56]:
+        - heading "Contacto" [level=4] [ref=e57]
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - img [ref=e60]
+            - generic [ref=e63]:
+              - text: C/ Benito Monción 29, esq. Máximo Gómez 34
+              - text: Centro Histórico, Santiago, RD
+          - listitem [ref=e64]:
+            - link "WhatsApp directo" [ref=e65] [cursor=pointer]:
+              - /url: https://wa.me/18297557202
+              - img [ref=e66]
+              - text: WhatsApp directo
+      - generic [ref=e68]:
+        - heading "Explorar" [level=4] [ref=e69]
+        - list [ref=e70]:
+          - listitem [ref=e71]:
+            - link "Habitaciones" [ref=e72] [cursor=pointer]:
+              - /url: /habitaciones
+          - listitem [ref=e73]:
+            - link "Reservar" [ref=e74] [cursor=pointer]:
+              - /url: /reservar
+          - listitem [ref=e75]:
+            - link "Cervecería Búcaro" [ref=e76] [cursor=pointer]:
+              - /url: /cerveceria
+          - listitem [ref=e77]:
+            - link "Nosotros" [ref=e78] [cursor=pointer]:
+              - /url: /nosotros
+          - listitem [ref=e79]:
+            - link "Contacto" [ref=e80] [cursor=pointer]:
+              - /url: /contacto
+    - generic [ref=e81]: © 2026 Hostal Nómada · Cervecería Búcaro. Santiago de los Caballeros, RD.
+  - button "Open Next.js Dev Tools" [ref=e87] [cursor=pointer]:
+    - img [ref=e88]
+  - alert [ref=e91]

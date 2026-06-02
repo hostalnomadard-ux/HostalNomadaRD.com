@@ -1,0 +1,12 @@
+# Private — never push to GitHub
+private/
+
+# Worktrees
+.worktrees/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

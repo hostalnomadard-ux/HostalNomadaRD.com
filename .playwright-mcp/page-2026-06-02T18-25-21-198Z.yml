@@ -1,0 +1,404 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Hostal Nómada" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Hostal Nómada" [ref=e5]
+      - generic [ref=e6]:
+        - link "Habitaciones" [ref=e7] [cursor=pointer]:
+          - /url: /habitaciones
+        - link "Nosotros" [ref=e8] [cursor=pointer]:
+          - /url: /nosotros
+        - link "Cervecería" [ref=e9] [cursor=pointer]:
+          - /url: /cerveceria
+        - link "Contacto" [ref=e10] [cursor=pointer]:
+          - /url: /contacto
+      - link "Reservar" [ref=e12] [cursor=pointer]:
+        - /url: /reservar
+  - main [ref=e13]:
+    - generic [ref=e14]:
+      - img "Fachada Art Déco Hostal Nómada — esquina Benito Monción y Máximo Gómez, Centro Histórico Santiago RD" [ref=e16]
+      - generic [ref=e19]:
+        - paragraph [ref=e20]: Benito Monción esq. Máximo Gómez · Santiago, RD
+        - heading "Hostal boutique en el centro histórico de Santiago, RD." [level=1] [ref=e21]
+        - paragraph [ref=e22]: 75 años en la calle más histórica de la ciudad. Edificio Art Déco de 1948 + Cervecería Búcaro. Habitaciones privadas con carácter.
+        - generic [ref=e23]:
+          - link "Reservar habitación" [ref=e24] [cursor=pointer]:
+            - /url: /reservar
+          - link "Conoce la Cervecería →" [ref=e25] [cursor=pointer]:
+            - /url: /cerveceria
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - img [ref=e28]
+            - generic [ref=e30]: "4.64"
+            - generic [ref=e31]: Airbnb
+          - generic [ref=e33]:
+            - img [ref=e34]
+            - generic [ref=e36]: "4.69"
+            - generic [ref=e37]: Hostelworld
+          - generic [ref=e39]: 457 reseñas
+          - generic [ref=e41]: 🍺 Cervecería Búcaro
+    - generic [ref=e44]:
+      - generic [ref=e45]: 📍 Centro Histórico
+      - generic [ref=e46]: 🍺 Cervecería Búcaro
+      - generic [ref=e47]: 🔐 Smart Lock 24h
+      - generic [ref=e48]: 🐾 Mascotas OK
+      - generic [ref=e49]: ✔ 14 años de anfitriones
+      - generic [ref=e50]: 💳 Check-in 15:00–23:00
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - img "Plano original 1948 — Arq. Pablo N. Pérez Rancier, Planta Primer Nivel, Guía de Arquitectura pág. 105" [ref=e56]
+        - 'img "Entrada Art Déco #34 — Hostal Nómada" [ref=e58]'
+        - generic [ref=e59]:
+          - paragraph [ref=e60]: Patrimonio Histórico
+          - paragraph [ref=e61]: Guía de Arquitectura · Pág. 105
+      - generic [ref=e62]:
+        - heading "De consultorio a punto de encuentro." [level=2] [ref=e63]
+        - paragraph [ref=e64]:
+          - text: En la antigua
+          - strong [ref=e65]: Calle de los Portales
+          - text: — hoy Benito Monción — el arquitecto
+          - strong [ref=e66]: Pablo N. Pérez Rancier
+          - text: levantó este edificio entre 1948 y 1949. Fue el hogar y consultorio del
+          - strong [ref=e67]: Dr. José de Jesús Jiménez Almonte
+          - text: ": médico internista, botánico, profesor universitario y campeón nacional de ajedrez."
+        - paragraph [ref=e68]:
+          - text: En su terraza se celebraban tertulias científicas, consultas de medicina y partidas épicas de ajedrez. La
+          - emphasis [ref=e69]: Tolumnia jimenezii
+          - text: ", orquídea endémica de la isla, lleva su nombre. Su hijo, el Dr."
+          - strong [ref=e70]: "\"Joseíto\""
+          - text: ", ejerció en el mismo consultorio por más de 50 años. Fue el último residente original."
+        - blockquote [ref=e71]:
+          - paragraph [ref=e72]:
+            - text: "\"Un médico que curaba corazones."
+            - text: Un botánico que nombraba orquídeas.
+            - text: Esta fue su casa. Ahora es la tuya."
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - generic [ref=e75]: "1948"
+            - generic [ref=e76]: Construcción — Arq. Pérez Rancier diseña residencia + consultorio modernista
+          - generic [ref=e77]:
+            - generic [ref=e78]: "1966"
+            - generic [ref=e79]: El Dr. Jiménez funda la primera unidad de cardiología en Santiago
+          - generic [ref=e80]:
+            - generic [ref=e81]: "1980"
+            - generic [ref=e82]: Premio Nacional de Ciencias de la República Dominicana
+          - generic [ref=e83]:
+            - generic [ref=e84]: 2000s
+            - generic [ref=e85]: El edificio queda vacío más de 20 años tras la partida de "Joseíto"
+          - generic [ref=e86]:
+            - generic [ref=e87]: Hoy
+            - generic [ref=e88]: Hostal Nómada + Cervecería Búcaro — el espíritu de encuentro continúa
+    - generic [ref=e90]:
+      - generic [ref=e91]:
+        - generic [ref=e92]:
+          - paragraph [ref=e93]: Habitaciones
+          - heading "Elige tu espacio." [level=2] [ref=e94]
+        - link "Ver todas las habitaciones →" [ref=e95] [cursor=pointer]:
+          - /url: /habitaciones
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - img "Cuarto Valle — Hostal Nómada" [ref=e99]
+            - generic [ref=e100]: Privado
+          - generic [ref=e101]:
+            - heading "Valle" [level=3] [ref=e102]
+            - paragraph [ref=e103]: ⭐ 4.64 · 11 reseñas
+            - paragraph [ref=e104]: Cama full size, baño privado, detalles en azul royal. El cuarto clásico del hostal en pleno centro histórico.
+            - generic [ref=e105]:
+              - generic [ref=e106]:
+                - img [ref=e107]
+                - text: 2 huéspedes
+              - generic [ref=e112]:
+                - img [ref=e113]
+                - text: Baño privado
+              - generic [ref=e116]:
+                - img [ref=e117]
+                - text: AC
+              - generic [ref=e121]:
+                - img [ref=e122]
+                - text: Smart Lock
+            - link "Reservar →" [ref=e125] [cursor=pointer]:
+              - /url: /reservar
+        - generic [ref=e126]:
+          - generic [ref=e127]:
+            - img "Cuarto Jungle — Hostal Nómada" [ref=e128]
+            - generic [ref=e129]: Privado
+          - generic [ref=e130]:
+            - heading "Jungle" [level=3] [ref=e131]
+            - paragraph [ref=e132]: ⭐ 4.5 · 6 reseñas
+            - paragraph [ref=e133]: Cama full size, baño privado, ambiente tropical con luz natural. Tranquilidad urbana en el corazón de Santiago.
+            - generic [ref=e134]:
+              - generic [ref=e135]:
+                - img [ref=e136]
+                - text: 2 huéspedes
+              - generic [ref=e141]:
+                - img [ref=e142]
+                - text: Baño privado
+              - generic [ref=e145]:
+                - img [ref=e146]
+                - text: AC
+              - generic [ref=e150]:
+                - img [ref=e151]
+                - text: Smart Lock
+            - link "Reservar →" [ref=e154] [cursor=pointer]:
+              - /url: /reservar
+        - generic [ref=e155]:
+          - generic [ref=e156]:
+            - img "Cuarto Mountain — Hostal Nómada" [ref=e157]
+            - generic [ref=e158]: Privado
+          - generic [ref=e159]:
+            - heading "Mountain" [level=3] [ref=e160]
+            - paragraph [ref=e161]: ⭐ 5.0 · 8 reseñas · Guest Favorite
+            - paragraph [ref=e162]: Cama full size, baño privado y balcón con vista a la ciudad. Guest Favorite en Airbnb — ⭐ 5.0 perfecto.
+            - generic [ref=e163]:
+              - generic [ref=e164]:
+                - img [ref=e165]
+                - text: 2 huéspedes
+              - generic [ref=e170]:
+                - img [ref=e171]
+                - text: Baño privado
+              - generic [ref=e174]:
+                - img [ref=e175]
+                - text: AC
+              - generic [ref=e179]:
+                - img [ref=e180]
+                - text: Smart Lock
+            - link "Reservar →" [ref=e183] [cursor=pointer]:
+              - /url: /reservar
+    - generic [ref=e185]:
+      - generic [ref=e186]:
+        - paragraph [ref=e187]: Incluido
+        - heading "Todo lo que necesitas." [level=2] [ref=e188]
+        - paragraph [ref=e189]: Sin sorpresas. Sin extras ocultos.
+      - generic [ref=e190]:
+        - generic [ref=e191]:
+          - img [ref=e192]
+          - generic [ref=e196]: WiFi Gratis
+        - generic [ref=e197]:
+          - img [ref=e198]
+          - generic [ref=e202]: Aire Acondicionado
+        - generic [ref=e203]:
+          - img [ref=e204]
+          - generic [ref=e207]: Smart Lock 24h
+        - generic [ref=e208]:
+          - img [ref=e209]
+          - generic [ref=e214]: Mascotas OK
+        - generic [ref=e215]:
+          - img [ref=e216]
+          - generic [ref=e220]: Parking en la calle (gratis)
+        - generic [ref=e221]:
+          - img [ref=e222]
+          - generic [ref=e224]: Toallas y Sábanas
+        - generic [ref=e225]:
+          - img [ref=e226]
+          - generic [ref=e229]: Ducha Caliente
+        - generic [ref=e230]:
+          - img [ref=e231]
+          - generic [ref=e236]: Sala Común
+        - generic [ref=e237]:
+          - img [ref=e238]
+          - generic [ref=e242]: Cervecería Búcaro
+    - generic [ref=e245]:
+      - generic [ref=e246]:
+        - paragraph [ref=e247]: Ubicación
+        - heading "A pasos de todo." [level=2] [ref=e248]
+        - paragraph [ref=e249]: Estás en el corazón del centro histórico. No en las afueras.
+        - generic [ref=e250]:
+          - generic [ref=e251]:
+            - generic [ref=e252]: 🍻
+            - generic [ref=e253]:
+              - generic [ref=e254]: 1 min
+              - generic [ref=e255]: Bares de Benito Monción
+              - generic [ref=e256]: en tu puerta
+          - generic [ref=e257]:
+            - generic [ref=e258]: 🍽️
+            - generic [ref=e259]:
+              - generic [ref=e260]: 2 min
+              - generic [ref=e261]: Mejores restaurantes del centro
+              - generic [ref=e262]: a pie
+          - generic [ref=e263]:
+            - generic [ref=e264]: 🏛️
+            - generic [ref=e265]:
+              - generic [ref=e266]: 2 min
+              - generic [ref=e267]: Monumento a los Héroes
+              - generic [ref=e268]: caminando
+          - generic [ref=e269]:
+            - generic [ref=e270]: 🌳
+            - generic [ref=e271]:
+              - generic [ref=e272]: 5 min
+              - generic [ref=e273]: Parque Duarte
+              - generic [ref=e274]: a pie
+          - generic [ref=e275]:
+            - generic [ref=e276]: 🏦
+            - generic [ref=e277]:
+              - generic [ref=e278]: 3 min
+              - generic [ref=e279]: Banco, farmacia, supermercado
+              - generic [ref=e280]: a pie
+          - generic [ref=e281]:
+            - generic [ref=e282]: ✈️
+            - generic [ref=e283]:
+              - generic [ref=e284]: 25 min
+              - generic [ref=e285]: Aeropuerto Internacional Cibao
+              - generic [ref=e286]: en taxi
+      - iframe [ref=e288]:
+        
+    - generic [ref=e290]:
+      - generic [ref=e291]:
+        - paragraph [ref=e292]: Reseñas
+        - heading "Lo que dicen nuestros huéspedes." [level=2] [ref=e293]
+        - generic [ref=e294]:
+          - generic [ref=e295]:
+            - img [ref=e296]
+            - strong [ref=e298]: "4.64"
+            - text: Airbnb
+          - generic [ref=e299]: ·
+          - generic [ref=e300]:
+            - img [ref=e301]
+            - strong [ref=e303]: "4.69"
+            - text: Hostelworld
+          - generic [ref=e304]: ·
+          - generic [ref=e305]: 457 reseñas
+      - generic [ref=e306]:
+        - generic [ref=e307]:
+          - generic [ref=e308]:
+            - img "estrella" [ref=e309]
+            - img "estrella" [ref=e311]
+            - img "estrella" [ref=e313]
+            - img "estrella" [ref=e315]
+            - img "estrella" [ref=e317]
+          - paragraph [ref=e319]: "\"Una sensación histórica del lugar que hizo que uno se sintiera bastante privilegiado de quedarse allí. Excelente comunicación y flexibilidad de los anfitriones.\""
+          - generic [ref=e320]:
+            - generic [ref=e321]:
+              - paragraph [ref=e322]: Landon
+              - paragraph [ref=e323]: Arlington, Virginia
+            - generic [ref=e324]:
+              - paragraph [ref=e325]: Dic 2025
+              - paragraph [ref=e326]: Airbnb
+        - generic [ref=e327]:
+          - generic [ref=e328]:
+            - img "estrella" [ref=e329]
+            - img "estrella" [ref=e331]
+            - img "estrella" [ref=e333]
+            - img "estrella" [ref=e335]
+            - img "estrella" [ref=e337]
+          - paragraph [ref=e339]: "\"No solo me regaló una estadía bonita, sino que me permitió realizar un viaje hacia mi interior y vivir la experiencia de estar en una zona histórica.\""
+          - generic [ref=e340]:
+            - generic [ref=e341]:
+              - paragraph [ref=e342]: Ólfir
+              - paragraph [ref=e343]: San Francisco de Macorís, RD
+            - generic [ref=e344]:
+              - paragraph [ref=e345]: Abr 2026
+              - paragraph [ref=e346]: Airbnb
+        - generic [ref=e347]:
+          - generic [ref=e348]:
+            - img "estrella" [ref=e349]
+            - img "estrella" [ref=e351]
+            - img "estrella" [ref=e353]
+            - img "estrella" [ref=e355]
+            - img "estrella" [ref=e357]
+          - paragraph [ref=e359]: "\"Lugar cómodo, seguro y limpio. Tiene bares, tiendas y restaurantes cerca. Muy conforme con las atenciones.\""
+          - generic [ref=e360]:
+            - generic [ref=e361]:
+              - paragraph [ref=e362]: Harold
+              - paragraph [ref=e363]: Santo Domingo, RD
+            - generic [ref=e364]:
+              - paragraph [ref=e365]: Nov 2025
+              - paragraph [ref=e366]: Airbnb
+    - generic [ref=e369]:
+      - generic [ref=e370]:
+        - heading "Tus anfitriones viven aquí." [level=2] [ref=e371]
+        - paragraph [ref=e372]: Somos una pareja joven que restauró este edificio y decidió quedarse. No gestionamos el hostal a distancia — vivimos en él, con nuestros dos perros, y estamos disponibles para lo que necesites.
+        - paragraph [ref=e373]: 14 años recibiendo viajeros de todo el mundo nos enseñaron que la mejor estadía empieza con buenos anfitriones. Respondemos en menos de una hora, hablamos español e inglés, y conocemos Santiago mejor que cualquier guía.
+        - generic [ref=e374]:
+          - generic [ref=e375]:
+            - paragraph [ref=e376]: "14"
+            - paragraph [ref=e377]: años como anfitriones
+          - generic [ref=e378]:
+            - paragraph [ref=e379]: "457"
+            - paragraph [ref=e380]: reseñas en Airbnb + Hostelworld
+          - generic [ref=e381]:
+            - paragraph [ref=e382]: "4.64"
+            - paragraph [ref=e383]: calificación promedio
+        - link "Escríbenos por WhatsApp" [ref=e384] [cursor=pointer]:
+          - /url: https://wa.me/18297557202
+          - img [ref=e385]
+          - text: Escríbenos por WhatsApp
+      - generic [ref=e387]:
+        - generic [ref=e388]:
+          - generic [ref=e389]: 🏡
+          - generic [ref=e390]:
+            - paragraph [ref=e391]: Javier y Familia
+            - paragraph [ref=e392]: Anfitriones · Santiago, RD
+        - generic [ref=e393]:
+          - generic [ref=e394]:
+            - generic [ref=e395]: ✓
+            - generic [ref=e396]: Vivimos en el hostal — presencia real, no remota
+          - generic [ref=e397]:
+            - generic [ref=e398]: ✓
+            - generic [ref=e399]: Respuesta en menos de 1 hora, 7 días a la semana
+          - generic [ref=e400]:
+            - generic [ref=e401]: ✓
+            - generic [ref=e402]: Español e inglés — sin barreras
+          - generic [ref=e403]:
+            - generic [ref=e404]: ✓
+            - generic [ref=e405]: Recomendaciones locales que no están en TripAdvisor
+          - generic [ref=e406]:
+            - generic [ref=e407]: ✓
+            - generic [ref=e408]: Mascotas bienvenidas — tenemos 2 perros
+    - generic [ref=e409]:
+      - generic [ref=e410]:
+        - paragraph [ref=e411]: Hostal Nómada
+        - heading "Reserva tu cuarto. Cama full · Baño privado · Smart Lock." [level=3] [ref=e412]:
+          - text: Reserva tu cuarto.
+          - generic [ref=e413]: Cama full · Baño privado · Smart Lock.
+        - link "Ver disponibilidad →" [ref=e414] [cursor=pointer]:
+          - /url: /reservar
+      - generic [ref=e415]:
+        - paragraph [ref=e416]: Cervecería Búcaro
+        - heading "Tómate una. En el mismo edificio." [level=3] [ref=e417]:
+          - text: Tómate una.
+          - generic [ref=e418]: En el mismo edificio.
+        - link "Conoce Búcaro →" [ref=e419] [cursor=pointer]:
+          - /url: /cerveceria
+  - contentinfo [ref=e420]:
+    - generic [ref=e421]:
+      - generic [ref=e422]:
+        - heading "Hostal Nómada" [level=3] [ref=e425]
+        - paragraph [ref=e426]: Edificio Art Déco de 1948 en el corazón histórico de Santiago, RD.
+        - paragraph [ref=e427]: ⭐ 4.64 Airbnb · 4.69 Hostelworld
+      - generic [ref=e428]:
+        - heading "Contacto" [level=4] [ref=e429]
+        - list [ref=e430]:
+          - listitem [ref=e431]:
+            - img [ref=e432]
+            - generic [ref=e435]:
+              - text: C/ Benito Monción 29, esq. Máximo Gómez 34
+              - text: Centro Histórico, Santiago, RD
+          - listitem [ref=e436]:
+            - link "WhatsApp directo" [ref=e437] [cursor=pointer]:
+              - /url: https://wa.me/18297557202
+              - img [ref=e438]
+              - text: WhatsApp directo
+      - generic [ref=e440]:
+        - heading "Explorar" [level=4] [ref=e441]
+        - list [ref=e442]:
+          - listitem [ref=e443]:
+            - link "Habitaciones" [ref=e444] [cursor=pointer]:
+              - /url: /habitaciones
+          - listitem [ref=e445]:
+            - link "Reservar" [ref=e446] [cursor=pointer]:
+              - /url: /reservar
+          - listitem [ref=e447]:
+            - link "Cervecería Búcaro" [ref=e448] [cursor=pointer]:
+              - /url: /cerveceria
+          - listitem [ref=e449]:
+            - link "Nosotros" [ref=e450] [cursor=pointer]:
+              - /url: /nosotros
+          - listitem [ref=e451]:
+            - link "Contacto" [ref=e452] [cursor=pointer]:
+              - /url: /contacto
+    - generic [ref=e453]: © 2026 Hostal Nómada · Cervecería Búcaro. Santiago de los Caballeros, RD.
+  - button "Open Next.js Dev Tools" [ref=e459] [cursor=pointer]:
+    - img [ref=e460]
+  - alert [ref=e463]

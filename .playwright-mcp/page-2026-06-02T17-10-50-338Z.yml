@@ -1,0 +1,79 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Hostal Nómada" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Hostal Nómada" [ref=e5]
+      - generic [ref=e6]:
+        - link "Habitaciones" [ref=e7] [cursor=pointer]:
+          - /url: /habitaciones
+        - link "Nosotros" [ref=e8] [cursor=pointer]:
+          - /url: /nosotros
+        - link "Cervecería" [ref=e9] [cursor=pointer]:
+          - /url: /cerveceria
+        - link "Contacto" [ref=e10] [cursor=pointer]:
+          - /url: /contacto
+      - link "Reservar" [ref=e12] [cursor=pointer]:
+        - /url: /reservar
+  - main [ref=e13]:
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - heading "Hostal Nómada — Quiénes Somos" [level=1] [ref=e17]
+        - paragraph [ref=e18]: Nómada es un hostal acogedor en el centro histórico de Santiago, RD, gestionado por una pareja joven que vive aquí con sus 2 perros.
+      - generic [ref=e19]:
+        - heading "El edificio" [level=2] [ref=e20]
+        - paragraph [ref=e21]: Con más de 75 años de historia, este emblemático edificio comenzó como un hospital y ha sido restaurado tras permanecer abandonado por más de 20 años. Su arquitectura conserva el encanto colonial con toques modernos. La fachada en tonos verdes y detalles azules destaca en un entorno urbano rodeado de calles peatonales y luces colgantes.
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - img [ref=e24]
+          - heading "Historia viva" [level=3] [ref=e27]
+          - paragraph [ref=e28]: Nuestro edificio tiene más de 75 años. Nació como hospital, fue abandonado por más de 20 años, y lo restauramos conservando su alma colonial.
+        - generic [ref=e29]:
+          - img [ref=e30]
+          - heading "Gestión personal" [level=3] [ref=e32]
+          - paragraph [ref=e33]: Somos una pareja joven que vive en el hostal con nuestros 2 perros. Respondemos en menos de una hora y estamos aquí para lo que necesites.
+        - generic [ref=e34]:
+          - img [ref=e35]
+          - heading "Viajeros para viajeros" [level=3] [ref=e38]
+          - paragraph [ref=e39]: Diseñado para el viajero moderno que quiere explorar Santiago auténticamente — no desde un resort, sino desde el corazón de la ciudad.
+      - paragraph [ref=e41]: 14 años como anfitriones · Hablamos español e inglés · Respuesta en <1 hora
+  - contentinfo [ref=e42]:
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - heading "Hostal Nómada" [level=3] [ref=e47]
+        - paragraph [ref=e48]: Edificio Art Déco de 1948 en el corazón histórico de Santiago, RD.
+        - paragraph [ref=e49]: ⭐ 4.64 Airbnb · 4.69 Hostelworld
+      - generic [ref=e50]:
+        - heading "Contacto" [level=4] [ref=e51]
+        - list [ref=e52]:
+          - listitem [ref=e53]:
+            - img [ref=e54]
+            - generic [ref=e57]:
+              - text: C/ Benito Monción 29, esq. Máximo Gómez 34
+              - text: Centro Histórico, Santiago, RD
+          - listitem [ref=e58]:
+            - link "WhatsApp directo" [ref=e59] [cursor=pointer]:
+              - /url: https://wa.me/18297557202
+              - img [ref=e60]
+              - text: WhatsApp directo
+      - generic [ref=e62]:
+        - heading "Explorar" [level=4] [ref=e63]
+        - list [ref=e64]:
+          - listitem [ref=e65]:
+            - link "Habitaciones" [ref=e66] [cursor=pointer]:
+              - /url: /habitaciones
+          - listitem [ref=e67]:
+            - link "Reservar" [ref=e68] [cursor=pointer]:
+              - /url: /reservar
+          - listitem [ref=e69]:
+            - link "Cervecería Búcaro" [ref=e70] [cursor=pointer]:
+              - /url: /cerveceria
+          - listitem [ref=e71]:
+            - link "Nosotros" [ref=e72] [cursor=pointer]:
+              - /url: /nosotros
+          - listitem [ref=e73]:
+            - link "Contacto" [ref=e74] [cursor=pointer]:
+              - /url: /contacto
+    - generic [ref=e75]: © 2026 Hostal Nómada · Cervecería Búcaro. Santiago de los Caballeros, RD.
+  - button "Open Next.js Dev Tools" [ref=e81] [cursor=pointer]:
+    - img [ref=e82]

@@ -1,0 +1,51 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Hostal Nómada" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Hostal Nómada" [ref=e5]
+      - button "Abrir menú" [ref=e6]:
+        - img [ref=e7]
+  - main [ref=e8]:
+    - generic [ref=e10]:
+      - heading "404" [level=1] [ref=e11]
+      - heading "This page could not be found." [level=2] [ref=e13]
+  - contentinfo [ref=e14]:
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - heading "Hostal Nómada" [level=3] [ref=e19]
+        - paragraph [ref=e20]: Edificio Art Déco de 1948 en el corazón histórico de Santiago, RD.
+        - paragraph [ref=e21]: ⭐ 4.64 Airbnb · 4.69 Hostelworld
+      - generic [ref=e22]:
+        - heading "Contacto" [level=4] [ref=e23]
+        - list [ref=e24]:
+          - listitem [ref=e25]:
+            - img [ref=e26]
+            - generic [ref=e29]:
+              - text: C/ Benito Monción 29, esq. Máximo Gómez 34
+              - text: Centro Histórico, Santiago, RD
+          - listitem [ref=e30]:
+            - link "WhatsApp directo" [ref=e31] [cursor=pointer]:
+              - /url: https://wa.me/18297557202
+              - img [ref=e32]
+              - text: WhatsApp directo
+      - generic [ref=e34]:
+        - heading "Explorar" [level=4] [ref=e35]
+        - list [ref=e36]:
+          - listitem [ref=e37]:
+            - link "Habitaciones" [ref=e38] [cursor=pointer]:
+              - /url: /habitaciones
+          - listitem [ref=e39]:
+            - link "Reservar" [ref=e40] [cursor=pointer]:
+              - /url: /reservar
+          - listitem [ref=e41]:
+            - link "Cervecería Búcaro" [ref=e42] [cursor=pointer]:
+              - /url: /cerveceria
+          - listitem [ref=e43]:
+            - link "Nosotros" [ref=e44] [cursor=pointer]:
+              - /url: /nosotros
+          - listitem [ref=e45]:
+            - link "Contacto" [ref=e46] [cursor=pointer]:
+              - /url: /contacto
+    - generic [ref=e47]: © 2026 Hostal Nómada · Cervecería Búcaro. Santiago de los Caballeros, RD.
+  - alert [ref=e48]

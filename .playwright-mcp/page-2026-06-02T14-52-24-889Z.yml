@@ -1,0 +1,138 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - link "Hostal Nómada" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Hostal Nómada" [ref=e5]
+      - button "Abrir menú" [ref=e6]:
+        - img [ref=e7]
+  - main [ref=e8]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - heading "Habitaciones en Santiago de los Caballeros, RD" [level=1] [ref=e12]
+        - paragraph [ref=e13]: Todas nuestras habitaciones incluyen WiFi, AC y acceso a las áreas comunes. Precios por persona/noche. Impuestos incluidos.
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - generic "foto de habitación" [ref=e16]:
+            - generic [ref=e17]: 🏨
+          - generic [ref=e18]:
+            - generic [ref=e19]:
+              - generic [ref=e20]:
+                - text: Privado
+                - heading "Cuarto Valle" [level=2] [ref=e21]
+              - paragraph [ref=e22]: Desde DOP 2,400
+            - paragraph [ref=e23]: Cama matrimonial cómoda con decoración minimalista en tonos cálidos y detalles en azul. Baño privado compacto con agua caliente, espejo redondo y ducha práctica. Ideal para quienes buscan comodidad y privacidad mientras exploran la ciudad.
+            - generic [ref=e24]:
+              - generic [ref=e25]:
+                - img [ref=e26]
+                - text: 2 huéspedes
+              - generic [ref=e31]:
+                - img [ref=e32]
+                - text: Baño Privado
+              - generic [ref=e35]:
+                - img [ref=e36]
+                - text: AC
+            - list [ref=e40]:
+              - listitem [ref=e41]:
+                - img [ref=e42]
+                - text: WiFi gratis
+              - listitem [ref=e44]:
+                - img [ref=e45]
+                - text: Aire acondicionado
+              - listitem [ref=e47]:
+                - img [ref=e48]
+                - text: Cerradura inteligente
+              - listitem [ref=e50]:
+                - img [ref=e51]
+                - text: Mascotas bienvenidas
+              - listitem [ref=e53]:
+                - img [ref=e54]
+                - text: Toallas y sábanas incluidas
+              - listitem [ref=e56]:
+                - img [ref=e57]
+                - text: Estacionamiento gratuito
+              - listitem [ref=e59]:
+                - img [ref=e60]
+                - text: Secadora de pelo
+            - link "Reservar esta habitación" [ref=e62] [cursor=pointer]:
+              - /url: /reservar
+        - generic [ref=e63]:
+          - generic "foto de habitación" [ref=e64]:
+            - generic [ref=e65]: 🏨
+          - generic [ref=e66]:
+            - generic [ref=e67]:
+              - generic [ref=e68]:
+                - text: Compartido
+                - heading "Habitación Compartida" [level=2] [ref=e69]
+              - paragraph [ref=e70]: Desde DOP 900
+            - paragraph [ref=e71]: Espacios comunes diseñados para socializar con viajeros de todo el mundo. Literas cómodas en ambiente colonial. La experiencia hostal auténtica en el corazón de Santiago.
+            - generic [ref=e72]:
+              - generic [ref=e73]:
+                - img [ref=e74]
+                - text: 4 huéspedes
+              - generic [ref=e79]:
+                - img [ref=e80]
+                - text: Baño Compartido
+              - generic [ref=e83]:
+                - img [ref=e84]
+                - text: AC
+            - list [ref=e88]:
+              - listitem [ref=e89]:
+                - img [ref=e90]
+                - text: WiFi gratis
+              - listitem [ref=e92]:
+                - img [ref=e93]
+                - text: Aire acondicionado
+              - listitem [ref=e95]:
+                - img [ref=e96]
+                - text: Lockers personales
+              - listitem [ref=e98]:
+                - img [ref=e99]
+                - text: Linen incluido
+              - listitem [ref=e101]:
+                - img [ref=e102]
+                - text: Sala común
+              - listitem [ref=e104]:
+                - img [ref=e105]
+                - text: Almacenaje de equipaje
+            - link "Reservar esta habitación" [ref=e107] [cursor=pointer]:
+              - /url: /reservar
+  - contentinfo [ref=e108]:
+    - generic [ref=e109]:
+      - generic [ref=e110]:
+        - heading "Hostal Nómada" [level=3] [ref=e113]
+        - paragraph [ref=e114]: Edificio Art Déco de 1948 en el corazón histórico de Santiago, RD.
+        - paragraph [ref=e115]: ⭐ 4.64 Airbnb · 4.69 Hostelworld
+      - generic [ref=e116]:
+        - heading "Contacto" [level=4] [ref=e117]
+        - list [ref=e118]:
+          - listitem [ref=e119]:
+            - img [ref=e120]
+            - generic [ref=e123]:
+              - text: C/ Benito Monción 29, esq. Máximo Gómez 34
+              - text: Centro Histórico, Santiago, RD
+          - listitem [ref=e124]:
+            - link "WhatsApp directo" [ref=e125] [cursor=pointer]:
+              - /url: https://wa.me/18297557202
+              - img [ref=e126]
+              - text: WhatsApp directo
+      - generic [ref=e128]:
+        - heading "Explorar" [level=4] [ref=e129]
+        - list [ref=e130]:
+          - listitem [ref=e131]:
+            - link "Habitaciones" [ref=e132] [cursor=pointer]:
+              - /url: /habitaciones
+          - listitem [ref=e133]:
+            - link "Reservar" [ref=e134] [cursor=pointer]:
+              - /url: /reservar
+          - listitem [ref=e135]:
+            - link "Cervecería Búcaro" [ref=e136] [cursor=pointer]:
+              - /url: /cerveceria
+          - listitem [ref=e137]:
+            - link "Nosotros" [ref=e138] [cursor=pointer]:
+              - /url: /nosotros
+          - listitem [ref=e139]:
+            - link "Contacto" [ref=e140] [cursor=pointer]:
+              - /url: /contacto
+    - generic [ref=e141]: © 2026 Hostal Nómada · Cervecería Búcaro. Santiago de los Caballeros, RD.
+  - alert [ref=e142]

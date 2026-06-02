@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  /* === Paleta original (mantener para otras páginas) === */
+  --color-nomada-green: #4E6B5A;
+  --color-nomada-green-dark: #3A5244;
+  --color-nomada-sage: #C8D4BF;
+  --color-nomada-sage-light: #E8EDE4;
+  --color-nomada-cream: #F8F7F4;
+
+  /* === Paleta nueva homepage === */
+  --color-verde-fresco: #52B788;
+  --color-verde-fresco-dark: #3D9A6E;
+  --color-verde-fresco-light: #D4EFE2;
+  --color-royal-blue: #2B5DB8;
+  --color-royal-blue-dark: #1E4490;
+  --color-royal-blue-light: #D0DCF5;
+  --color-cream: #F5F0E8;
+  --color-carbon: #1A1A1A;
+  --color-blueprint-blue: #0A2463;
+
+  --font-family-sans: var(--font-space-grotesk), system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-gray-900 font-sans antialiased;
+  }
+}
+
+/* ── Hero entrance animations ─────────────────────────────────── */
+@keyframes heroZoom {
+  from { opacity: 0; transform: scale(1.06); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes overlayFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideDownFade {
+  from { opacity: 0; transform: translateY(-22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUpFade {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleFadeIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.hero-bg {
+  animation: heroZoom 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.hero-overlay {
+  opacity: 0;
+  animation: overlayFade 0.9s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.hero-tag {
+  opacity: 0;
+  animation: slideDownFade 0.5s ease forwards;
+  animation-delay: 0.55s;
+}
+
+.hero-h1 {
+  opacity: 0;
+  animation: slideDownFade 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: 0.78s;
+}
+
+.hero-p {
+  opacity: 0;
+  animation: slideDownFade 0.5s ease forwards;
+  animation-delay: 1s;
+}
+
+.hero-buttons {
+  opacity: 0;
+  animation: scaleFadeIn 0.5s ease forwards;
+  animation-delay: 1.22s;
+}
+
+.hero-rating {
+  opacity: 0;
+  animation: slideUpFade 0.55s ease forwards;
+  animation-delay: 1.45s;
+}
