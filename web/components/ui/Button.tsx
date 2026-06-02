@@ -23,7 +23,7 @@ type ButtonAsLink = {
 type ButtonProps = ButtonAsButton | ButtonAsLink
 
 const variantClasses: Record<ButtonVariant, string> = {
-  primary:         'bg-verde-fresco text-white hover:bg-verde-fresco-dark',
+  primary:         'bg-verde-fresco text-white hover:bg-verde-fresco-dark hover:scale-[1.02] hover:shadow-lg',
   outline:         'border-2 border-verde-fresco text-verde-fresco hover:bg-verde-fresco-light',
   ghost:           'text-verde-fresco hover:bg-verde-fresco-light',
   royal:           'bg-royal-blue text-white hover:bg-royal-blue-dark',
@@ -37,7 +37,7 @@ const sizeClasses: Record<ButtonSize, string> = {
 }
 
 const baseClasses =
-  'inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-verde-fresco disabled:opacity-50'
+  'inline-flex items-center justify-center rounded-md font-medium transition-all duration-150 active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-verde-fresco disabled:opacity-50'
 
 export function Button({
   variant = 'primary',
