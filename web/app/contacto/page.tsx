@@ -4,7 +4,15 @@ import { MapPin, Clock, Phone } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Contacto — Hostal Nómada Santiago RD',
   description:
-    'Contáctanos en Hostal Nómada. C/ Benito Monción 29, esq. Máximo Gómez 34, Centro Histórico, Santiago de los Caballeros, RD. WhatsApp: +1 (829) 755-7202.',
+    'Hostal Nómada en el Centro Histórico de Santiago de los Caballeros, RD. Dirección: C/ Benito Monción 29, esq. Máximo Gómez 34. Teléfono: +1 (829) 755-7202. Check-in: 3:00 PM.',
+  openGraph: {
+    title: 'Contacto — Hostal Nómada Santiago RD',
+    description: 'Contáctanos por WhatsApp, email o visítanos en Benito Monción 29, centro histórico de Santiago de los Caballeros, RD.',
+    url: 'https://hostalnomadard.com/contacto',
+    images: [{ url: '/images/fachada-esquina.png', width: 1200, height: 630, alt: 'Hostal Nómada — Santiago RD' }],
+  },
+  twitter: { card: 'summary_large_image', images: ['/images/fachada-esquina.png'] },
+  alternates: { canonical: 'https://hostalnomadard.com/contacto' },
 }
 
 export default function ContactoPage() {
@@ -12,7 +20,7 @@ export default function ContactoPage() {
     <div className="py-16 bg-cream min-h-screen">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Contacto</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Contacto — Hostal Nómada, Santiago RD</h1>
           <p className="text-gray-600">Estamos aquí para ayudarte.</p>
         </div>
 
@@ -52,8 +60,9 @@ export default function ContactoPage() {
                 <div className="flex items-start gap-3">
                   <Phone size={20} className="text-verde-fresco mt-0.5 shrink-0" />
                   <div>
-                    <p className="font-semibold">WhatsApp</p>
-                    <p className="text-gray-600 text-sm">Respondemos en menos de 1 hora</p>
+                    <p className="font-semibold">Teléfono / WhatsApp</p>
+                    <a href="tel:+18297557202" className="text-gray-900 font-semibold text-sm hover:text-verde-fresco transition-colors">+1 (829) 755-7202</a>
+                    <p className="text-gray-500 text-xs mt-0.5">Respondemos en menos de 1 hora</p>
                   </div>
                 </div>
               </div>

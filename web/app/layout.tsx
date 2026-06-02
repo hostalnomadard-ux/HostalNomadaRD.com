@@ -30,12 +30,18 @@ export const metadata: Metadata = {
     siteName: 'Hostal Nómada',
     images: [
       {
-        url: '/images/fachada.jpg',
+        url: '/images/fachada-esquina.png',
         width: 1200,
         height: 630,
         alt: 'Fachada Art Déco Hostal Nómada — Centro Histórico Santiago, RD',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hostal Nómada — Hospedaje Boutique en Santiago RD',
+    description: 'Edificio Art Déco de 1948 + Cervecería Búcaro. ⭐ 4.64 · 457 reseñas. Centro Histórico Santiago, RD.',
+    images: ['https://hostalnomadard.com/images/fachada-esquina.png'],
   },
 }
 

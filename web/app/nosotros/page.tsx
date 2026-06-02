@@ -5,6 +5,14 @@ export const metadata: Metadata = {
   title: 'Quiénes Somos — Hostal Nómada Santiago RD',
   description:
     'Conoce a los anfitriones de Hostal Nómada — una pareja joven apasionada por el turismo local en Santiago de los Caballeros, RD. 14 años de experiencia como anfitriones.',
+  openGraph: {
+    title: 'Quiénes Somos — Hostal Nómada Santiago RD',
+    description: 'Pareja joven apasionada por el turismo local en Santiago, RD. 14 años de experiencia. Edificio Art Déco de 1948 restaurado.',
+    url: 'https://hostalnomadard.com/nosotros',
+    images: [{ url: '/images/fachada-esquina.png', width: 1200, height: 630, alt: 'Fachada Hostal Nómada — Santiago RD' }],
+  },
+  twitter: { card: 'summary_large_image', images: ['/images/fachada-esquina.png'] },
+  alternates: { canonical: 'https://hostalnomadard.com/nosotros' },
 }
 
 const values = [

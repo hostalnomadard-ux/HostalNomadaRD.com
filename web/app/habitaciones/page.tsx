@@ -5,6 +5,14 @@ export const metadata: Metadata = {
   title: 'Habitaciones en Santiago RD — Hostal Nómada',
   description:
     'Habitaciones privadas y compartidas en Hostal Nómada, centro histórico de Santiago de los Caballeros, RD. Baño privado, AC, WiFi. Desde DOP 900/noche.',
+  openGraph: {
+    title: 'Habitaciones en Santiago RD — Hostal Nómada',
+    description: 'Habitaciones privadas y compartidas en Hostal Nómada, centro histórico de Santiago de los Caballeros, RD. Baño privado, AC, WiFi. Desde DOP 900/noche.',
+    url: 'https://hostalnomadard.com/habitaciones',
+    images: [{ url: '/images/cuarto-mountain.jpg', width: 1200, height: 630, alt: 'Habitaciones Hostal Nómada — Centro Histórico Santiago RD' }],
+  },
+  twitter: { card: 'summary_large_image', images: ['/images/cuarto-mountain.jpg'] },
+  alternates: { canonical: 'https://hostalnomadard.com/habitaciones' },
 }
 
 const rooms: Room[] = [
