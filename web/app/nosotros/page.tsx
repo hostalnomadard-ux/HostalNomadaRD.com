@@ -33,42 +33,57 @@ const values = [
   },
 ]
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://hostalnomadard.com' },
+    { '@type': 'ListItem', position: 2, name: 'Quiénes Somos', item: 'https://hostalnomadard.com/nosotros' },
+  ],
+}
+
 export default function NosotrosPage() {
   return (
-    <div className="py-16 min-h-screen">
-      <div className="max-w-4xl mx-auto px-4">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Hostal Nómada — Quiénes Somos</h1>
-          <p className="text-xl text-gray-600 leading-relaxed">
-            Nómada es un hostal acogedor en el centro histórico de Santiago, RD, gestionado por una
-            pareja joven que vive aquí con sus 2 perros.
-          </p>
-        </div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <div className="py-16 min-h-screen">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Hostal Nómada — Quiénes Somos</h1>
+            <p className="text-xl text-gray-600 leading-relaxed">
+              Nómada es un hostal acogedor en el centro histórico de Santiago, RD, gestionado por una
+              pareja joven que vive aquí con sus 2 perros.
+            </p>
+          </div>
 
-        <div className="bg-verde-fresco rounded-2xl p-8 md:p-12 text-white mb-12">
-          <h2 className="text-2xl font-bold mb-4">El edificio</h2>
-          <p className="text-white/90 leading-relaxed text-lg">
-            Con más de 75 años de historia, este emblemático edificio comenzó como un hospital y ha
-            sido restaurado tras permanecer abandonado por más de 20 años. Su arquitectura conserva
-            el encanto colonial con toques modernos. La fachada en tonos verdes y detalles azules
-            destaca en un entorno urbano rodeado de calles peatonales y luces colgantes.
-          </p>
-        </div>
+          <div className="bg-verde-fresco rounded-2xl p-8 md:p-12 text-white mb-12">
+            <h2 className="text-2xl font-bold mb-4">El edificio</h2>
+            <p className="text-white/90 leading-relaxed text-lg">
+              Con más de 75 años de historia, este emblemático edificio comenzó como un hospital y ha
+              sido restaurado tras permanecer abandonado por más de 20 años. Su arquitectura conserva
+              el encanto colonial con toques modernos. La fachada en tonos verdes y detalles azules
+              destaca en un entorno urbano rodeado de calles peatonales y luces colgantes.
+            </p>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {values.map(({ icon: Icon, title, text }) => (
-            <div key={title} className="bg-cream rounded-xl p-6">
-              <Icon size={28} className="text-verde-fresco mb-4" />
-              <h3 className="font-bold text-lg mb-2">{title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">{text}</p>
-            </div>
-          ))}
-        </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {values.map(({ icon: Icon, title, text }) => (
+              <div key={title} className="bg-cream rounded-xl p-6">
+                <Icon size={28} className="text-verde-fresco mb-4" />
+                <h3 className="font-bold text-lg mb-2">{title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{text}</p>
+              </div>
+            ))}
+          </div>
 
-        <div className="text-center mt-12 text-sm text-gray-500">
-          <p>14 años como anfitriones · Hablamos español e inglés · Respuesta en &lt;1 hora</p>
+          <div className="text-center mt-12 text-sm text-gray-500">
+            <p>14 años como anfitriones · Hablamos español e inglés · Respuesta en &lt;1 hora</p>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }

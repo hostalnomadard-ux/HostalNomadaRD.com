@@ -15,9 +15,23 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://hostalnomadard.com/contacto' },
 }
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://hostalnomadard.com' },
+    { '@type': 'ListItem', position: 2, name: 'Contacto', item: 'https://hostalnomadard.com/contacto' },
+  ],
+}
+
 export default function ContactoPage() {
   return (
-    <div className="py-16 bg-cream min-h-screen">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <div className="py-16 bg-cream min-h-screen">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Contacto — Hostal Nómada, Santiago RD</h1>
@@ -80,5 +94,6 @@ export default function ContactoPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }

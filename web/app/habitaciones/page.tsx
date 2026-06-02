@@ -100,8 +100,22 @@ const rooms: Room[] = [
   },
 ]
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Inicio', item: 'https://hostalnomadard.com' },
+    { '@type': 'ListItem', position: 2, name: 'Habitaciones', item: 'https://hostalnomadard.com/habitaciones' },
+  ],
+}
+
 export default function HabitacionesPage() {
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
     <div className="py-16 bg-cream min-h-screen">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
@@ -118,5 +132,6 @@ export default function HabitacionesPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }
