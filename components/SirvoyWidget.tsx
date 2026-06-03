@@ -13,32 +13,20 @@ export function SirvoyWidget({ engineId }: SirvoyWidgetProps) {
     if (!engineId || !containerRef.current) return
 
     const container = containerRef.current
+    container.innerHTML = ''
 
-    // Remove any pre-existing script + widget
-    document.querySelector('script[data-form-id]')?.remove()
-    document.getElementById('sbw_widget_1')?.remove()
+    const widgetDiv = document.createElement('div')
+    widgetDiv.id = 'sbw_widget_1'
+    container.appendChild(widgetDiv)
 
-    // Observe body for the sbw_widget_* div Sirvoy injects
-    const observer = new MutationObserver(() => {
-      const sbw = document.querySelector('[id^="sbw_widget_"]') as HTMLElement | null
-      if (sbw && sbw.parentElement !== container) {
-        container.appendChild(sbw)
-        observer.disconnect()
-      }
-    })
-    observer.observe(document.body, { childList: true, subtree: false })
-
-    // Inject the Sirvoy script
     const script = document.createElement('script')
-    script.async = true
-    script.setAttribute('data-form-id', engineId)
+    script.type = 'text/javascript'
     script.src = 'https://secured.sirvoy.com/widget/sirvoy.js'
-    document.body.appendChild(script)
+    script.setAttribute('data-form-id', engineId)
+    widgetDiv.appendChild(script)
 
     return () => {
-      observer.disconnect()
-      document.querySelector('script[data-form-id]')?.remove()
-      document.getElementById('sbw_widget_1')?.remove()
+      container.innerHTML = ''
     }
   }, [engineId])
 
