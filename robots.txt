@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Rutas privadas
+Disallow: /admin
+Disallow: /login
+Disallow: /cliente
+Disallow: /factura
+Disallow: /factura-demo
+Disallow: /pos
+
+Sitemap: https://www.preservativosintimaterd.com/sitemap.xml

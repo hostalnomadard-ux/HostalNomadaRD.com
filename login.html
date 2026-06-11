@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intimate — Login</title>
+<meta name="robots" content="noindex, nofollow">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+:root{--mag:#e91e8c;--pur:#7b2fff;--cyan:#00d4ff;--dark:#0a0a0f;--dark2:#12121a;--card:#1a1a28;--text:#f0f0f5;--muted:#a0a0c0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--dark);color:var(--text);font-family:'DM Sans',system-ui,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem}
+.box{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:2.5rem;width:100%;max-width:380px;text-align:center}
+.logo{font-size:1.8rem;font-weight:800;color:var(--mag);margin-bottom:.4rem}
+.sub{color:var(--muted);font-size:.9rem;margin-bottom:1.8rem}
+.input{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:.9rem 1rem;color:var(--text);font-size:.95rem;outline:none;margin-bottom:1rem;font-family:inherit}
+.input:focus{border-color:var(--mag)}
+.pass-wrap{position:relative;margin-bottom:1rem}
+.pass-wrap .input{margin-bottom:0;padding-right:3rem}
+.eye{position:absolute;right:.9rem;top:50%;transform:translateY(-50%);background:none;border:none;color:var(--muted);cursor:pointer;padding:0;font-size:1.1rem;line-height:1;min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center}
+.eye:hover{color:var(--text)}
+.btn{width:100%;background:var(--mag);color:#fff;border:none;padding:1rem;border-radius:10px;font-size:1rem;font-weight:700;cursor:pointer;font-family:inherit}
+.btn:disabled{opacity:.6;cursor:wait}
+.err{color:#ff8080;font-size:.85rem;margin-top:.8rem;min-height:1.2em}
+</style>
+</head>
+<body>
+<form class="box" id="f">
+  <div class="logo">Intimate</div>
+  <div class="sub">Acceso al sistema</div>
+  <input class="input" type="email" id="email" placeholder="Email" required autocomplete="email">
+  <div class="pass-wrap">
+    <input class="input" type="password" id="pass" placeholder="Contraseña" required autocomplete="current-password">
+    <button type="button" class="eye" id="eyeBtn" onclick="togglePass()" aria-label="Mostrar contraseña" aria-pressed="false">👁</button>
+  </div>
+  <button class="btn" id="b" type="submit">Entrar</button>
+  <button type="button" id="forgot" style="background:none;border:none;color:var(--mag);font-size:.82rem;cursor:pointer;margin-top:.8rem;font-family:inherit">¿Olvidaste tu contraseña?</button>
+  <div class="err" id="e"></div>
+</form>
+<script>
+const SUPABASE_URL='https://zthlaomiqlncyvxnmvmu.supabase.co';
+const SUPABASE_KEY='sb_publishable_0mrKmeEYywvvO9yL09T13Q_jJcC2ujM';
+const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+
+async function redirectByRole(session){
+  const rol=session.user.user_metadata?.rol||'vendedor';
+  location.href=rol==='admin'?'/admin':'/pos';
+}
+
+sb.auth.getSession().then(({data})=>{if(data.session)redirectByRole(data.session);});
+
+document.getElementById('f').onsubmit=async(ev)=>{
+  ev.preventDefault();
+  const b=document.getElementById('b'),e=document.getElementById('e');
+  b.disabled=true;b.textContent='Entrando...';b.setAttribute('aria-busy','true');e.textContent='';
+  const{data,error}=await sb.auth.signInWithPassword({
+    email:document.getElementById('email').value.trim(),
+    password:document.getElementById('pass').value
+  });
+  const AUTH_ERRORS={'Invalid login credentials':'Email o contraseña incorrectos.','Email not confirmed':'Confirma tu email antes de entrar.','User not found':'No existe una cuenta con ese email.','Invalid email or password':'Email o contraseña incorrectos.'};
+  if(error){e.textContent=AUTH_ERRORS[error.message]||error.message;b.disabled=false;b.textContent='Entrar';b.removeAttribute('aria-busy');return}
+  b.removeAttribute('aria-busy');
+  await redirectByRole(data.session);
+};
+
+function togglePass(){
+  const p=document.getElementById('pass');
+  const showing=p.type==='text';
+  p.type=showing?'password':'text';
+  document.getElementById('eyeBtn').textContent=showing?'👁':'🙈';
+  const eye=document.getElementById('eyeBtn');
+  if(eye) eye.setAttribute('aria-pressed', p.type==='text'?'true':'false');
+}
+
+document.getElementById('forgot').onclick=async()=>{
+  const e=document.getElementById('e');
+  const email=document.getElementById('email').value.trim();
+  if(!email){e.textContent='Escribe tu email primero.';return}
+  const{error}=await sb.auth.resetPasswordForEmail(email,{redirectTo:'https://www.preservativosintimaterd.com/login'});
+  e.style.color=error?'#ff8080':'#7CFC9A';
+  e.textContent=error?('Error: '+error.message):'Te enviamos un correo para restablecer tu contraseña.';
+};
+</script>
+</body>
+</html>
