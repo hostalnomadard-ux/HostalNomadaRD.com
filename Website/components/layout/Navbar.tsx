@@ -11,6 +11,7 @@ const navLinks = [
   { href: '/nosotros', label: 'Nosotros' },
   { href: '/cerveceria', label: 'Cervecería' },
   { href: '/contacto', label: 'Contacto' },
+  { href: '/blog', label: 'Blog' },
 ]
 
 export function Navbar() {
