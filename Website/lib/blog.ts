@@ -61,7 +61,7 @@ export function parsePost(raw: string, slug: string): Post {
     hub: data.hub ?? false,
     related: data.related ?? [],
     faq: data.faq ?? [],
-    readingMinutes: data.readingMinutes ?? readingTime(content),
+    readingMinutes: Math.max(1, Math.round(Number(data.readingMinutes ?? readingTime(content)))),
   }
   return { meta, content }
 }
@@ -72,6 +72,7 @@ export function getAllSlugs(): string[] {
     .readdirSync(BLOG_DIR)
     .filter((f) => f.endsWith('.mdx'))
     .map((f) => f.replace(/\.mdx$/, ''))
+    .sort()
 }
 
 export function getPostBySlug(slug: string): Post {

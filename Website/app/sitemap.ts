@@ -4,7 +4,8 @@ import { getAllPosts } from '@/lib/blog'
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://hostalnomadard.com'
 
-  const blogPosts: MetadataRoute.Sitemap = getAllPosts().map((post) => ({
+  const posts = getAllPosts()
+  const blogPosts: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${base}/blog/${post.slug}`,
     lastModified: new Date(post.updated),
     changeFrequency: 'monthly',
@@ -50,7 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: base + '/blog',
-      lastModified: new Date(),
+      lastModified: posts[0] ? new Date(posts[0].updated) : new Date('2026-06-20'),
       changeFrequency: 'weekly',
       priority: 0.8,
     },

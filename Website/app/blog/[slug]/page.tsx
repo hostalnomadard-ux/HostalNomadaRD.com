@@ -46,7 +46,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   } catch {
     notFound()
   }
-  const { meta, content } = post!
+  if (!post) notFound()
+  const { meta, content } = post
   const url = `${BASE}/blog/${slug}`
 
   const blogPostingSchema = {
