@@ -1,7 +1,15 @@
 import type { MetadataRoute } from 'next'
+import { getAllPosts } from '@/lib/blog'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://hostalnomadard.com'
+
+  const blogPosts: MetadataRoute.Sitemap = getAllPosts().map((post) => ({
+    url: `${base}/blog/${post.slug}`,
+    lastModified: new Date(post.updated),
+    changeFrequency: 'monthly',
+    priority: post.hub ? 0.8 : 0.7,
+  }))
 
   return [
     {
@@ -40,5 +48,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.7,
     },
+    {
+      url: base + '/blog',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    ...blogPosts,
   ]
 }

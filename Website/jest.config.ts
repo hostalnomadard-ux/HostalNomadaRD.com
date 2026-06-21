@@ -8,6 +8,7 @@ const config: Config = {
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>/$1',
     '^motion/react$': '<rootDir>/__mocks__/motion-react.tsx',
   },
   testPathIgnorePatterns: ['/node_modules/', '/.next/', '/.worktrees/'],
