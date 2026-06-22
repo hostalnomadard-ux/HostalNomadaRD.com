@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import type { PostMeta } from '@/lib/blog'
+import { BlogCover } from '@/components/blog/BlogCover'
 
 export function PostCard({ meta }: { meta: PostMeta }) {
   return (
@@ -8,8 +8,8 @@ export function PostCard({ meta }: { meta: PostMeta }) {
       href={`/blog/${meta.slug}`}
       className="group block rounded-2xl overflow-hidden border border-gray-100 bg-white hover:shadow-md transition-shadow duration-200"
     >
-      <div className="relative aspect-[16/9] bg-cream">
-        <Image src={meta.ogImage} alt={meta.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+      <div className="relative aspect-[16/9]">
+        <BlogCover meta={meta} variant="card" />
       </div>
       <div className="p-5">
         <h2 className="text-lg font-bold text-carbon leading-snug mb-2 group-hover:text-verde-fresco transition-colors">

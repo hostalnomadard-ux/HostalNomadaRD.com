@@ -133,3 +133,14 @@
   0%, 100% { box-shadow: 0 0 0 0 rgba(43, 93, 184, 0.4); }
   50% { box-shadow: 0 0 20px 6px rgba(43, 93, 184, 0.2); }
 }
+
+/* ── Blog cover (portadas animadas temáticas) ─────────────────── */
+@keyframes bc-bob { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-10px) } }
+@keyframes bc-spin { to { transform: rotate(360deg) } }
+@keyframes bc-drift { 0%, 100% { transform: translate(0, 0) } 50% { transform: translate(16px, -14px) } }
+.bc-bob { animation: bc-bob 6s ease-in-out infinite; }
+.bc-spin { animation: bc-spin 120s linear infinite; transform-origin: center; }
+.bc-drift { animation: bc-drift 16s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .bc-spin, .bc-drift, .bc-bob { animation: none; }
+}

@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import type { PostMeta } from '@/lib/blog'
+import { BlogCover } from '@/components/blog/BlogCover'
 
 export function ArticleHero({ meta }: { meta: PostMeta }) {
   return (
-    <section className="bg-carbon py-20 px-4">
-      <div className="max-w-3xl mx-auto">
+    <section className="relative overflow-hidden bg-carbon py-20 px-4">
+      <BlogCover meta={meta} variant="hero" />
+      <div className="relative z-10 max-w-3xl mx-auto">
         <nav className="mb-6 text-sm text-white/40" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-white/70 transition-colors">Inicio</Link>
           <span className="mx-2">/</span>
