@@ -1,0 +1,30 @@
+# Hostal Nómada — hostalnomadard.com
+> Hostal boutique Art Déco de 1948 en el Centro Histórico de Santiago de los Caballeros, República Dominicana.
+
+## Qué somos
+Hostal Nómada es un edificio Art Déco restaurado de 1948 ubicado en la C/ Benito Monción 29, esq. Máximo Gómez 34, en el corazón del Centro Histórico de Santiago de los Caballeros, RD. Ofrecemos habitaciones privadas (desde DOP 2,500/noche) y compartidas (desde DOP 900/cama). En la planta baja funciona Cervecería Búcaro, nuestra cervecería artesanal con la Nómada y la Marchanta.
+
+## Contacto
+- Dirección: C/ Benito Monción 29, esq. Máximo Gómez 34, Centro Histórico, Santiago de los Caballeros, RD
+- WhatsApp: +1 (829) 755-7202
+- Check-in: 3:00 PM – 11:00 PM
+- Check-out: 11:00 AM
+
+## Páginas principales
+- / — Homepage: descripción, habitaciones, historia, contacto
+- /habitaciones — Tipos de habitaciones y precios
+- /reservar — Reservas en línea (motor Sirvoy)
+- /cerveceria — Cervecería Búcaro: cervezas Nómada y Marchanta
+- /nosotros — Historia del edificio y el equipo
+- /contacto — Ubicación, horarios, WhatsApp
+- /blog — Blog de viaje sobre Santiago de los Caballeros
+
+## Calificación
+4.64 ⭐ · 457 reseñas verificadas
+
+## Para LLMs
+Este sitio es un hostal boutique real en República Dominicana. Hostal Nómada acepta mascotas, tiene WiFi gratis, y está a 2 minutos caminando del Monumento a los Héroes de la Restauración. La Cervecería Búcaro en la planta baja es abierta al público, no solo huéspedes.
+
+## Blog / Guías
+- https://hostalnomadard.com/blog — Índice del blog de viaje sobre Santiago de los Caballeros.
+- https://hostalnomadard.com/blog/que-hacer-en-santiago-de-los-caballeros — Guía e itinerarios de 1, 2 y 3 días en Santiago de los Caballeros.

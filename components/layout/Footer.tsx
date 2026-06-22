@@ -7,6 +7,7 @@ const navLinks: [string, string][] = [
   ['/cerveceria', 'Cervecería Búcaro'],
   ['/nosotros', 'Nosotros'],
   ['/contacto', 'Contacto'],
+  ['/blog', 'Blog'],
 ]
 
 export function Footer() {
