@@ -23,6 +23,7 @@ export interface PostMeta {
   readingMinutes: number
   coverColor: string
   coverEmoji: string
+  coverImage: string | null
 }
 export interface Post {
   meta: PostMeta
@@ -66,6 +67,7 @@ export function parsePost(raw: string, slug: string): Post {
     readingMinutes: Math.max(1, Math.round(Number(data.readingMinutes ?? readingTime(content)))),
     coverColor: data.coverColor ?? '#52B788',
     coverEmoji: data.coverEmoji ?? '🧭',
+    coverImage: data.coverImage ?? null,
   }
   return { meta, content }
 }

@@ -1,11 +1,26 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import type { PostMeta } from '@/lib/blog'
 import { BlogCover } from '@/components/blog/BlogCover'
 
 export function ArticleHero({ meta }: { meta: PostMeta }) {
   return (
     <section className="relative overflow-hidden bg-carbon py-20 px-4">
-      <BlogCover meta={meta} variant="hero" />
+      {meta.coverImage ? (
+        <>
+          <Image
+            src={meta.coverImage}
+            alt={meta.title}
+            fill
+            className="object-cover opacity-60"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
+        </>
+      ) : (
+        <BlogCover meta={meta} variant="hero" />
+      )}
       <div className="relative z-10 max-w-3xl mx-auto">
         <nav className="mb-6 text-sm text-white/40" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-white/70 transition-colors">Inicio</Link>
