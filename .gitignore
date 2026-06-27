@@ -10,8 +10,18 @@ Thumbs.db
 
 # Logs
 *.log
+**/server.log
 
 # Env files (secrets / config)
 .env
 .env.local
 .env.*.local
+
+# Claude / tooling internals
+.claude/
+.superpowers/
+.playwright-mcp/
+.remember/
+
+# Next.js build output
+web/.next/
